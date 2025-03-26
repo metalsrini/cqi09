@@ -1,0 +1,11 @@
+{
+  "job_id": "389d9609-3e25-41ec-87f6-e1b530fa0b14",
+  "timestamp": "2025-03-26 10:20:43",
+  "wps_filename": "wps_new.pdf",
+  "pqr_filename": "pqr_new.pdf",
+  "wps_job_id": "b431e30d-ea50-4e0b-abda-caf6c25b4002",
+  "pqr_job_id": "d5473f67-9a9d-4bbb-9f6d-4f48edfcf496",
+  "status": "failed",
+  "extraction_quality": "enhanced",
+  "error": "WPS extraction failed: Error calling Mistral model: Requested tokens (3103) exceed context window of 2048"
+}

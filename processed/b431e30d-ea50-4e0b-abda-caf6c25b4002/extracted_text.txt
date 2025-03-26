@@ -1,0 +1,126 @@
+
+
+                                        QW - 482 
+                     WELDING PROCEDURE SPECIFICATION (WPS) 
+  ACERO 
+COMPANY NAME: JG ACERO INDUSTRIES PVT.LTD. NASHIK.                                  Page 1 of 2 
+Welding Procedure Specification No. : JGAIPL/CS/WPS/01 Rev: 1 Date : 07/01/2021 
+Welding Process(es) : GTAW + SMAW    Type(s) : Manual   PQR NO. : JGAIPL/CS/PQR/01 
+
+JOINTS : (QW - 402 ) 
+- Groove Design                               As per applicable Manufacturing Drawing as referenced in 
+ (Root face, Root spacing, incl. angle)       Weld Plan 
+- Backing : Yes / No                          With backing or without backing as per applicable 
+  (Refers to both Backing & Retainer )        Manufacturing Drawing as referenced in Weld Plan 
+                                              Retainers not used. 
+ - Backing Material ( Type )                  -Metal/Weld Metal 
+ [X] Metal [ ] Nonmetallic [ ] Nonfusing Metal [ ] Others 
+
+ BASE METALS : (QW - 403 )                    FILLER METAL : (QW - 404 ) 
+                                              Process               GTAW           SMAW 
+ P. No. 1 Gr. No. 1,2,3 TO P. No. 1 Gr. No. 1,2,3 
+ OR                                           SFA No.               5.18          5.1 
+
+                                              AWS ( Class )         ER70S2        E-7018 
+
+ Specification Type & Grade.                  F. No.                6             4 
+ TO 
+                                                                    1            1 
+ Specification Type & Grade.                  A. No. 
+                                              Size of Filler        1.6, 2.0,2.4, 2.5, 3.15, 4 
+ OR 
+                                              Metal (mm) dia        2.5, 3.0,3.15 
+                                                                    Bare wire   Bare Wire 
+ Chemical Analysis            ---             Filler metal product form Bare (Solid) Bare (Solid) 
+ & Mechanical Properties     ---- 
+  TO                                          Flux Trade            Not         Not 
+ Chemical Analysis           ----             Name/Designation      Applicable Applicable 
+ & Mechanical Properties      ---- 
+                                              Consumable Insert     Not         Not 
+                                                                    Applicable Applicable 
+                    GROOVE       FILLET       Range of     Groove   6 Max.      14 Max. 
+                                              Deposited 
+ Base Metal                                   Weld metal   Fillet   Any         Any 
+ Thk. Range (mm)    1.5 to 20 mm Any          Thk. (mm) 
+ Pipe dia (mm)                                Thk. Per pass Max     NO          NO 
+ Range ( mm)        Any           Any         t pass > 1/2 in (13 mm) 
+                                              Flux Type             Not         Not 
+                                                                    Applicable Applicable 
+ Others: - Not Applicable                     Others: - Not Applicable 
+
+ POSITION : (QW - 405 )                       PREHEAT : (QW - 406 ) 
+
+ Position(s) of Groove : All                  Preheat Temperature (Min.) ℃ : 15 
+
+ Weld Progression : Up Hill                   Inter pass Temperature (Max.) ℃ : 150 
+
+ Position(s) of fillet : All                  Preheat Maintenance           : Not Applicable 
+
+                                                                    NSU 
+                                                                                 C 
+
+                                                                       SPM 
+                                                                                   * 
+                  /7/01/2021 
+                                                                     SERVICES 
+<<<
+
+                                           QW - 482 
+                      WELDING PROCEDURE SPECIFICATION (WPS) 
+   ACERO 
+ COMPANY NAME: JG ACERO INDUSTRIES PVT.LTD. NASHIK.                                      Page 2 of 2 
+ Welding Procedure Specification No. : JGAIPL/CS/WPS/01 Rev: 1 Date : 07/01/2021 
+ Welding Process(es) : GTAW + SMAW      Type(s) : Manual    PQR NO. : JGAIPL/CS/PQR/01 
+
+ POST WELD HEATTREATMENT(QW-407) 
+                                                  GAS : (QW-408) 
+ Type                 : Not Applicable                             Gas(es)   % Comp    Flow Rate 
+                                                                            Mixture    ( lit /min) 
+ Temperature Range ºC : Not Applicable            Shielding       Argon     99.99%     5 -15 
+                                                  Trailing        None      ----       ---- 
+ Time Range            : Not Applicable 
+                                                  Backing (For root None               --- 
+                                                  pass of groove) 
+ ELECTRICAL CHARACTRISTICS : (QW-409) 
+ Type of Current   : DC                       Polarity     : GTAW- SP (Electrode - Ve) , SMAW -RP 
+                                              (Electrode +ve) 
+ Amps(Range)       : 80 A to 130A             Volts        : 11 V to 30V (For Reference Only) 
+ Tungsten Electrode Size and Type:            Heat Input   : As required. 
+ 2.0,2.4,3.0,4.0mm,2% Thoriated (EWTH) for GTAW 
+Mode of Metal transfer : Not Applicable      Pulsing Current : With or Without 
+
+ TECHNIQUE : (QW-410) 
+Manual/Automatic          : Manual           Contact Tube to work distance (mm) : Not Applicable 
+ String or Weave Bead     : String / Weave   Multiple or single Pass per side : Multiple/Single 
+
+ Orifice or Gas Cup Size ¢ (mm) : 6 to 12.5 Multiple or Single Electrode     : Single 
+ Initial and Inter pass Cleaning : Grinding / Wire Brush Travel Speed ( Range ) mm/ min : As required 
+
+Method of Back Gouging    : Grinding         Peening                         : Not Applicable 
+Closed to out of chamber : Not Applicable    Electrode Spacing              : Not Applicable 
+Oscillation               : Not Applicable   Use of thermal processes       : Not Applicable 
+Others: 1) Surface to be welded shall be free from Grease, Oil Scale & Rust. Cleaning shall be done with wire 
+         brush/wheel. 
+Weld      Process       Filler Metal          Current        Voltage Travel     Remarks 
+Layers    / es                                  (A)          Range    Speed 
+                     Class    Dia.      Amp        Type        (V)    Range 
+                              mm        Range      Polarity           cm/min 
+Root      GTAW     ER70S2     1.6       110 to 125 DC         *11 to As         * Voltage Range For 
+Pass &                        2.0       115 to 130 EN          25     required reference Only 
+1st Run                       2.5       115 to 130 
+
+Rest               E-7018     2.5       115 to 130 DC         *11 to As         * Voltage Range For 
+Passes    SMAW                3.15      130 to 145 EP          30     required reference Only 
+                              4.0       140 to 180 
+        PREPARED BY                   APPROVED BY                       REVIEWED BY 
+
+                 2021 
+
+                                CANCY 
+     WELDING                        WELDING MANAGER                       CLIENT 
+ SPM CONSULTANCY SERVICES           CONSULTANCY 7/1/2021 SERVICES 
+                                     * 
+                    * 
+                        SERVICES 
+             ENGINESONSU 
+<<<

@@ -1,0 +1,11 @@
+{
+  "job_id": "ab381b47-5295-4b5b-8057-921ad3cf1637",
+  "timestamp": "2025-03-25 21:14:50",
+  "wps_filename": "wps_new.pdf",
+  "pqr_filename": "pqr_new.pdf",
+  "wps_job_id": "33f3c8ec-c3b3-45c7-b29d-bd516fa395f3",
+  "pqr_job_id": "ea8cd464-a8d1-446e-9d66-e59843eea363",
+  "status": "failed",
+  "extraction_quality": "enhanced",
+  "error": "WPS extraction failed: Local DeepSeek model could not be initialized and no API fallback is allowed."
+}

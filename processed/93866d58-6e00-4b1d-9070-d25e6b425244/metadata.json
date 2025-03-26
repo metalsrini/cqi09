@@ -1,0 +1,11 @@
+{
+  "job_id": "93866d58-6e00-4b1d-9070-d25e6b425244",
+  "timestamp": "2025-03-26 10:21:55",
+  "wps_filename": "wps_new.pdf",
+  "pqr_filename": "pqr_new.pdf",
+  "wps_job_id": "0755dda9-dd13-4e79-a102-82c5e64c83ab",
+  "pqr_job_id": "72d9293f-7247-46af-8fbe-78e52bf75f8c",
+  "status": "failed",
+  "extraction_quality": "enhanced",
+  "error": "WPS extraction failed: No valid responses from any chunks"
+}

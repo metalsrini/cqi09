@@ -1,0 +1,206 @@
+{
+  "document_information": {
+    "pqr_number": "JGAIPL/CS/PQR/O1",
+    "revision": "O",
+    "date": "O7/O1/2O21",
+    "company": "JG ACERO INDUSTRIES PVT.LTD.",
+    "welding_process": {
+      "processes": [
+        "GTAW",
+        "SMAW"
+      ]
+    },
+    "wps_reference": "JGAIPL/CS/WPS/O1"
+  },
+  "joints": {
+    "joint_design": "",
+    "backing": "",
+    "joint_type": "",
+    "groove_angle": "",
+    "root_opening": "-2-2.5 mm",
+    "root_face": ""
+  },
+  "base_metals": {
+    "p_number": "1",
+    "group_number": "2",
+    "material_spec": "SA516 Gr 7O",
+    "type_grade": "",
+    "to_p_number": "1",
+    "to_group_number": "2",
+    "thickness": "10 mm",
+    "diameter": ""
+  },
+  "filler_metals": [
+    {
+      "process": "GTAW",
+      "f_number": "6",
+      "a_number": "1",
+      "specification": "SFA No. 5.18",
+      "classification": "ER7OS2",
+      "filler_size": "2.5",
+      "filler_type": "Solid (Bare)"
+    },
+    {
+      "process": "SMAW",
+      "f_number": "4",
+      "a_number": "1",
+      "specification": "SFA No. 5.1",
+      "classification": "E-7O18",
+      "filler_size": "3.15",
+      "filler_type": "Solid"
+    }
+  ],
+  "position": {
+    "position": "3G",
+    "progression": "Up Hill"
+  },
+  "preheat": {
+    "preheat_temp": "22",
+    "interpass_temp": "< 150",
+    "preheat_maintenance": "Not Applicable"
+  },
+  "post_weld_heat_treatment": {
+    "pwht_temp": "Not Applicable",
+    "pwht_time": "Not Applicable",
+    "heating_rate": "",
+    "cooling_rate": ""
+  },
+  "gas": {
+    "shielding_gas": "Argon 99.99%",
+    "shielding_flow_rate": "14 LPM",
+    "backing_gas": "None",
+    "backing_flow_rate": ""
+  },
+  "electrical_characteristics": {
+    "current_type": "DC",
+    "polarity": "SP (Electrode -Ve)",
+    "amperage": "* See Tabulation",
+    "voltage": "* See Tabulation",
+    "tungsten_type": "2% Thoriated (EWTH)",
+    "tungsten_size": "2.4 mm",
+    "wire_feed_speed": "",
+    "travel_speed": "Not Recorded",
+    "heat_input": "",
+    "transfer_mode": ""
+  },
+  "technique": {
+    "string_weave": "String/Weave",
+    "orifice_gas_cup": "10 mm",
+    "cleaning_method": "Wire Brush/Wire wheel",
+    "peening": "Not Applicable",
+    "initial_final_cleaning": "Wire Brush/Wire wheel",
+    "oscillation": "Not Applicable",
+    "multi_single_pass": "Multiple",
+    "multi_single_electrode": "Single"
+  },
+  "welding_parameter_table": [
+    {
+      "process": "GTAW",
+      "pass_number": "Root Pass",
+      "filler_metal": "ER7OS-2 2.4",
+      "current": "DCSP",
+      "amperage": "102-103",
+      "voltage": "18-19",
+      "travel_speed": "36.03",
+      "heat_input": ""
+    },
+    {
+      "process": "GTAW",
+      "pass_number": "Pass 1",
+      "filler_metal": "ER7OS-2 2.4",
+      "current": "DCSP",
+      "amperage": "106-107",
+      "voltage": "18-19",
+      "travel_speed": "52.98",
+      "heat_input": ""
+    },
+    {
+      "process": "SMAW",
+      "pass_number": "Pass 2",
+      "filler_metal": "E-7O18 3.15",
+      "current": "DCSP",
+      "amperage": "80-82",
+      "voltage": "20-21",
+      "travel_speed": "40.54",
+      "heat_input": ""
+    },
+    {
+      "process": "SMAW",
+      "pass_number": "Pass 3",
+      "filler_metal": "E-7O18 3.15",
+      "current": "DCRP",
+      "amperage": "79-80",
+      "voltage": "20-21",
+      "travel_speed": "64.69",
+      "heat_input": ""
+    },
+    {
+      "process": "SMAW",
+      "pass_number": "Pass 4",
+      "filler_metal": "E-7O18 3.15",
+      "current": "DCRP",
+      "amperage": "79-80",
+      "voltage": "20-21",
+      "travel_speed": "67.60",
+      "heat_input": ""
+    }
+  ],
+  "test_results": {
+    "tensile_test": {
+      "specimens": [
+        {
+          "specimen_number": "T1",
+          "width": "20.08",
+          "thickness": "10.42",
+          "area": "209.23",
+          "ultimate_load": "110.48",
+          "ultimate_strength": "528.02",
+          "failure_location": "Within Base Metal",
+          "result": "Pass"
+        },
+        {
+          "specimen_number": "T2",
+          "width": "20.12",
+          "thickness": "10.38",
+          "area": "210.86",
+          "ultimate_load": "110.08",
+          "ultimate_strength": "527.09",
+          "failure_location": "Within Base Metal",
+          "result": "Pass"
+        }
+      ]
+    },
+    "guided_bend_test": {
+      "specimens": [
+        {
+          "specimen_number": "Face Bend-1",
+          "type": "Face Bend",
+          "result": "Acceptable"
+        },
+        {
+          "specimen_number": "Face Bend-2",
+          "type": "Face Bend",
+          "result": "Acceptable"
+        },
+        {
+          "specimen_number": "Root Bend-1",
+          "type": "Root Bend",
+          "result": "Acceptable"
+        },
+        {
+          "specimen_number": "Root Bend-2",
+          "type": "Root Bend",
+          "result": "Acceptable"
+        }
+      ]
+    },
+    "additional_tests": {
+      "impact_test": "Not Applicable",
+      "hardness_test": "",
+      "other_tests": ""
+    }
+  },
+  "reference_standards": [
+    "ASME Section IX Code 2019 Edition"
+  ]
+}

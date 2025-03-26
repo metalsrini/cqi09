@@ -1,0 +1,13 @@
+{
+  "job_id": "00291014-c51d-40f3-a9fe-e7499ff61dc1",
+  "timestamp": "2025-03-25 20:57:39",
+  "wps_filename": "wps_new.pdf",
+  "pqr_filename": "pqr_new.pdf",
+  "wps_job_id": "2019ba65-1443-467c-a7a3-a86062d048a4",
+  "pqr_job_id": "2ee95bae-d647-4683-ba94-1397cf59e8eb",
+  "status": "completed",
+  "extraction_quality": "enhanced",
+  "completion_time": "2025-03-25 20:59:53",
+  "compliance_result": false,
+  "compliance_score": 47
+}

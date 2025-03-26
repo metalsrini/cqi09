@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}Upload MTC - Steel Mill Test Certificate Analyzer{% endblock %}
+
+{% block header %}Mill Test Certificate Analyzer{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0"><i class="fas fa-upload me-2"></i>Upload Mill Test Certificate</h5>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-info" role="alert">
+                    <i class="fas fa-info-circle me-2"></i>Upload a steel mill test certificate to analyze its contents. 
+                    The application will extract structured information and allow you to ask questions about the document.
+                </div>
+                
+                <form id="upload-form" action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+                    <div class="upload-area mb-4">
+                        <div class="upload-icon">
+                            <i class="fas fa-file-upload"></i>
+                        </div>
+                        <h5>Drop your file here or click to browse</h5>
+                        <p class="text-muted">Supported formats: PDF, JPG, PNG</p>
+                        <input class="form-control d-none" type="file" id="file-upload" name="file" accept=".pdf,.jpg,.jpeg,.png">
+                        <button type="button" class="btn btn-outline-primary mt-2" onclick="document.getElementById('file-upload').click()">
+                            Select File
+                        </button>
+                        <div id="selected-file-name" class="mt-2 text-primary fw-bold"></div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div id="pdf-preview"></div>
+                            <div id="image-preview"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="progress mb-3 d-none" id="upload-progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary d-none" id="upload-btn">Upload & Process</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="card mt-4">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>About the Analyzer</h5>
+            </div>
+            <div class="card-body">
+                <p>The Steel Mill Test Certificate Analyzer is a powerful tool that helps you:</p>
+                <ul>
+                    <li><strong>Extract text</strong> from mill test certificates using advanced OCR technology</li>
+                    <li><strong>Structure the data</strong> into categories like chemical composition and mechanical properties</li>
+                    <li><strong>Query the document</strong> using natural language to find specific information</li>
+                    <li><strong>Save and organize</strong> your processed certificates for future reference</li>
+                </ul>
+                <p>This tool is particularly useful for quality control, material verification, and documentation processes in manufacturing and engineering.</p>
+            </div>
+        </div>
+        
+        <div class="card mt-4">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0"><i class="fas fa-clipboard-check me-2"></i>WPS/PQR Compliance Verification</h5>
+            </div>
+            <div class="card-body">
+                <p>Verify compliance between Welding Procedure Specifications (WPS) and Procedure Qualification Records (PQR) according to ASME Section IX:</p>
+                <ul>
+                    <li><strong>Upload both documents</strong> and automatically check compliance</li>
+                    <li><strong>Verify essential variables</strong> like base metals, filler metals, positions, and techniques</li>
+                    <li><strong>Identify non-compliant items</strong> with clear explanations and code references</li>
+                    <li><strong>Generate detailed reports</strong> of the verification results</li>
+                </ul>
+                <a href="{{ url_for('wps_pqr_compliance') }}" class="btn btn-success mt-2">
+                    <i class="fas fa-clipboard-check me-2"></i>Try WPS/PQR Verifier
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Make the entire upload area clickable
+    $('.upload-area').on('click', function(e) {
+        if (e.target !== this) return;
+        $('#file-upload').click();
+    });
+    
+    // Handle drag and drop
+    $('.upload-area').on('dragover', function(e) {
+        e.preventDefault();
+        $(this).addClass('border-primary');
+    }).on('dragleave', function(e) {
+        e.preventDefault();
+        $(this).removeClass('border-primary');
+    }).on('drop', function(e) {
+        e.preventDefault();
+        $(this).removeClass('border-primary');
+        
+        if (e.originalEvent.dataTransfer.files.length) {
+            $('#file-upload')[0].files = e.originalEvent.dataTransfer.files;
+            $('#file-upload').trigger('change');
+        }
+    });
+</script>
+{% endblock %} 

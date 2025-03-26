@@ -1,0 +1,11 @@
+{
+  "job_id": "a960ac6a-a97a-4b5b-9ade-ad6ca515fe91",
+  "timestamp": "2025-03-26 10:36:30",
+  "wps_filename": "wps_new.pdf",
+  "pqr_filename": "pqr_new.pdf",
+  "wps_job_id": "210a2c40-7280-4403-9815-a38a9599a60c",
+  "pqr_job_id": "501a925e-f3b2-4484-8389-11814e5451c3",
+  "status": "failed",
+  "extraction_quality": "enhanced",
+  "error": "WPS extraction failed: Exception during WPS extraction: query_llm() got an unexpected keyword argument 'temperature'"
+}

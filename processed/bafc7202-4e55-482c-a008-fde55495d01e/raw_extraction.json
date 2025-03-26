@@ -1,0 +1,1384 @@
+{
+  "confidence_metadata": [
+    [],
+    [],
+    [
+      {
+        "confidence": "0.888",
+        "offset": 1251,
+        "text": "-483",
+        "width": 108
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "confidence": "0.876",
+        "offset": 803,
+        "text": "+",
+        "width": 16
+      }
+    ],
+    [],
+    [
+      {
+        "confidence": "0.86",
+        "offset": 562,
+        "text": "(QW-402)",
+        "width": 235
+      },
+      {
+        "confidence": "0.751",
+        "offset": 1397,
+        "text": "60",
+        "width": 35
+      },
+      {
+        "confidence": "0.747",
+        "offset": 1392,
+        "text": "455",
+        "width": 69
+      }
+    ],
+    [],
+    [],
+    [],
+    [
+      {
+        "confidence": "0.893",
+        "offset": 1017,
+        "text": "mm",
+        "width": 36
+      }
+    ],
+    [
+      {
+        "confidence": "0.82",
+        "offset": 1451,
+        "text": "2-2.5",
+        "width": 91
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "confidence": "0.627",
+        "offset": 1407,
+        "text": "\u2103",
+        "width": 18
+      }
+    ],
+    [
+      {
+        "confidence": "0.876",
+        "offset": 709,
+        "text": ":",
+        "width": 12
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "confidence": "0.762",
+        "offset": 1852,
+        "text": "----",
+        "width": 37
+      }
+    ],
+    [],
+    [
+      {
+        "confidence": "0.711",
+        "offset": 1662,
+        "text": "---",
+        "width": 25
+      },
+      {
+        "confidence": "0.588",
+        "offset": 1851,
+        "text": "-----",
+        "width": 48
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "confidence": "0.506",
+        "offset": 1414,
+        "text": "\u00a2",
+        "width": 16
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "confidence": "0.531",
+        "offset": 669,
+        "text": "\u00b0C",
+        "width": 27
+      },
+      {
+        "confidence": "0.557",
+        "offset": 841,
+        "text": ":",
+        "width": 17
+      }
+    ],
+    [
+      {
+        "confidence": "0.878",
+        "offset": 1809,
+        "text": ":",
+        "width": 20
+      },
+      {
+        "confidence": "0.851",
+        "offset": 1912,
+        "text": "2",
+        "width": 16
+      },
+      {
+        "confidence": "0.873",
+        "offset": 1935,
+        "text": "of",
+        "width": 27
+      }
+    ],
+    [
+      {
+        "confidence": "0.513",
+        "offset": 701,
+        "text": "\u00b0C",
+        "width": 29
+      },
+      {
+        "confidence": "0.886",
+        "offset": 1612,
+        "text": ":",
+        "width": 17
+      }
+    ],
+    [],
+    [
+      {
+        "confidence": "0.814",
+        "offset": 1682,
+        "text": "20RA",
+        "width": 61
+      }
+    ],
+    [],
+    [
+      {
+        "confidence": "0.513",
+        "offset": 2031,
+        "text": "*",
+        "width": 19
+      }
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      {
+        "confidence": "0.773",
+        "offset": 989,
+        "text": "U",
+        "width": 20
+      }
+    ],
+    [],
+    [],
+    [
+      {
+        "confidence": "0.542",
+        "offset": 1249,
+        "text": "8",
+        "width": 24
+      },
+      {
+        "confidence": "0.834",
+        "offset": 878,
+        "text": "CON",
+        "width": 65
+      }
+    ],
+    [],
+    [],
+    [
+      {
+        "confidence": "0.86",
+        "offset": 514,
+        "text": "WELDING",
+        "width": 129
+      }
+    ],
+    [],
+    [
+      {
+        "confidence": "0.759",
+        "offset": 698,
+        "text": "7/1/2021",
+        "width": 115
+      }
+    ],
+    [
+      {
+        "confidence": "0.555",
+        "offset": 1111,
+        "text": "CONSULTANCY",
+        "width": 207
+      }
+    ],
+    [],
+    [],
+    []
+  ],
+  "line_metadata": [
+    [
+      0,
+      0,
+      0,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      332,
+      46,
+      3168
+    ],
+    [
+      0,
+      389,
+      51,
+      3168
+    ],
+    [
+      0,
+      446,
+      49,
+      3168
+    ],
+    [
+      0,
+      487,
+      45,
+      3168
+    ],
+    [
+      0,
+      536,
+      36,
+      3168
+    ],
+    [
+      0,
+      584,
+      38,
+      3168
+    ],
+    [
+      0,
+      640,
+      38,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      734,
+      54,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      821,
+      22,
+      3168
+    ],
+    [
+      0,
+      850,
+      19,
+      3168
+    ],
+    [
+      0,
+      866,
+      31,
+      3168
+    ],
+    [
+      0,
+      916,
+      36,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      988,
+      30,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1081,
+      53,
+      3168
+    ],
+    [
+      0,
+      1123,
+      38,
+      3168
+    ],
+    [
+      0,
+      1164,
+      40,
+      3168
+    ],
+    [
+      0,
+      1203,
+      37,
+      3168
+    ],
+    [
+      0,
+      1244,
+      40,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1317,
+      50,
+      3168
+    ],
+    [
+      0,
+      1348,
+      36,
+      3168
+    ],
+    [
+      0,
+      1383,
+      35,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1462,
+      35,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1544,
+      37,
+      3168
+    ],
+    [
+      0,
+      1585,
+      36,
+      3168
+    ],
+    [
+      0,
+      1623,
+      32,
+      3168
+    ],
+    [
+      0,
+      1640,
+      44,
+      3168
+    ],
+    [
+      0,
+      1690,
+      42,
+      3168
+    ],
+    [
+      0,
+      1727,
+      36,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1817,
+      51,
+      3168
+    ],
+    [
+      0,
+      1849,
+      35,
+      3168
+    ],
+    [
+      0,
+      1890,
+      37,
+      3168
+    ],
+    [
+      0,
+      1927,
+      34,
+      3168
+    ],
+    [
+      0,
+      1970,
+      34,
+      3168
+    ],
+    [
+      0,
+      1989,
+      38,
+      3168
+    ],
+    [
+      0,
+      2007,
+      31,
+      3168
+    ],
+    [
+      0,
+      2050,
+      35,
+      3168
+    ],
+    [
+      0,
+      2066,
+      50,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2152,
+      52,
+      3168
+    ],
+    [
+      0,
+      2208,
+      39,
+      3168
+    ],
+    [
+      0,
+      2236,
+      38,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2301,
+      32,
+      3168
+    ],
+    [
+      0,
+      2316,
+      38,
+      3168
+    ],
+    [
+      0,
+      2362,
+      39,
+      3168
+    ],
+    [
+      0,
+      2394,
+      35,
+      3168
+    ],
+    [
+      0,
+      2414,
+      34,
+      3168
+    ],
+    [
+      0,
+      2461,
+      39,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2531,
+      52,
+      3168
+    ],
+    [
+      0,
+      2584,
+      38,
+      3168
+    ],
+    [
+      0,
+      2619,
+      41,
+      3168
+    ],
+    [
+      0,
+      2648,
+      37,
+      3168
+    ],
+    [
+      0,
+      2701,
+      39,
+      3168
+    ],
+    [
+      0,
+      2753,
+      37,
+      3168
+    ],
+    [
+      0,
+      2778,
+      38,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2841,
+      57,
+      3168
+    ],
+    [
+      0,
+      2876,
+      23,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2945,
+      29,
+      3168
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      334,
+      47,
+      3168
+    ],
+    [
+      1,
+      392,
+      55,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      454,
+      52,
+      3168
+    ],
+    [
+      1,
+      495,
+      44,
+      3168
+    ],
+    [
+      1,
+      539,
+      40,
+      3168
+    ],
+    [
+      1,
+      588,
+      41,
+      3168
+    ],
+    [
+      1,
+      646,
+      40,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      727,
+      36,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      799,
+      37,
+      3168
+    ],
+    [
+      1,
+      842,
+      26,
+      3168
+    ],
+    [
+      1,
+      890,
+      34,
+      3168
+    ],
+    [
+      1,
+      937,
+      35,
+      3168
+    ],
+    [
+      1,
+      976,
+      30,
+      3168
+    ],
+    [
+      1,
+      1012,
+      32,
+      3168
+    ],
+    [
+      1,
+      1071,
+      33,
+      3168
+    ],
+    [
+      1,
+      1127,
+      34,
+      3168
+    ],
+    [
+      1,
+      1183,
+      32,
+      3168
+    ],
+    [
+      1,
+      1240,
+      32,
+      3168
+    ],
+    [
+      1,
+      1299,
+      32,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1375,
+      51,
+      3168
+    ],
+    [
+      1,
+      1420,
+      34,
+      3168
+    ],
+    [
+      1,
+      1459,
+      33,
+      3168
+    ],
+    [
+      1,
+      1492,
+      38,
+      3168
+    ],
+    [
+      1,
+      1538,
+      33,
+      3168
+    ],
+    [
+      1,
+      1584,
+      32,
+      3168
+    ],
+    [
+      1,
+      1643,
+      32,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1711,
+      49,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1776,
+      35,
+      3168
+    ],
+    [
+      1,
+      1835,
+      36,
+      3168
+    ],
+    [
+      1,
+      1893,
+      35,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1954,
+      35,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      2014,
+      35,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      2101,
+      35,
+      3168
+    ],
+    [
+      1,
+      2117,
+      37,
+      3168
+    ],
+    [
+      1,
+      2146,
+      38,
+      3168
+    ],
+    [
+      1,
+      2161,
+      38,
+      3168
+    ],
+    [
+      1,
+      2202,
+      37,
+      3168
+    ],
+    [
+      1,
+      2230,
+      39,
+      3168
+    ],
+    [
+      1,
+      2245,
+      39,
+      3168
+    ],
+    [
+      1,
+      2287,
+      39,
+      3168
+    ],
+    [
+      1,
+      2325,
+      38,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      2457,
+      33,
+      3168
+    ],
+    [
+      1,
+      2472,
+      34,
+      3168
+    ],
+    [
+      1,
+      2492,
+      36,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      2570,
+      88,
+      3168
+    ],
+    [
+      1,
+      2617,
+      66,
+      3168
+    ],
+    [
+      1,
+      2648,
+      57,
+      3168
+    ],
+    [
+      1,
+      2696,
+      29,
+      3168
+    ],
+    [
+      1,
+      2711,
+      31,
+      3168
+    ],
+    [
+      1,
+      2729,
+      35,
+      3168
+    ],
+    [
+      1,
+      2743,
+      115,
+      3168
+    ],
+    [
+      1,
+      2758,
+      167,
+      3168
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ]
+  ],
+  "metadata": {
+    "0": {
+      "font_info": {
+        "average_char_height": 35.25755137529899,
+        "average_char_width": 16.18946806185521,
+        "std_dev_char_height": 6.59729693669769,
+        "std_dev_char_width": 3.9963913611129076
+      },
+      "line_count": 72,
+      "line_end": 73,
+      "line_start": 1,
+      "page_number": 0,
+      "potential_subtitles": [
+        {
+          "page": 0,
+          "position": 2,
+          "section_length": 1,
+          "text": "QW -483"
+        },
+        {
+          "page": 0,
+          "position": 3,
+          "section_length": 1,
+          "text": "PROCEDURE QUALIFICATION RECORD"
+        },
+        {
+          "page": 0,
+          "position": 4,
+          "section_length": 1,
+          "text": "(PQR)"
+        },
+        {
+          "page": 0,
+          "position": 5,
+          "section_length": 0,
+          "text": "ACERO"
+        },
+        {
+          "page": 0,
+          "position": 5,
+          "section_length": 4,
+          "text": "(ASME SECTION IX 2019 EDITION)"
+        },
+        {
+          "page": 0,
+          "position": 10,
+          "section_length": 6,
+          "text": "JOINTS : (QW-402) :"
+        },
+        {
+          "page": 0,
+          "position": 19,
+          "section_length": 0,
+          "text": "BASE METALS (QW-403)"
+        },
+        {
+          "page": 0,
+          "position": 19,
+          "section_length": 2,
+          "text": "POST WELD HEATTREATMENT :(QW -407)"
+        },
+        {
+          "page": 0,
+          "position": 21,
+          "section_length": 2,
+          "text": "Material Specification :"
+        },
+        {
+          "page": 0,
+          "position": 23,
+          "section_length": 1,
+          "text": "Thickness"
+        },
+        {
+          "page": 0,
+          "position": 25,
+          "section_length": 0,
+          "text": "FILLER METAL : (QW - 404)"
+        },
+        {
+          "page": 0,
+          "position": 25,
+          "section_length": 7,
+          "text": "GAS : (QW-408)"
+        },
+        {
+          "page": 0,
+          "position": 34,
+          "section_length": 1,
+          "text": "ELECTRICAL CHARACTERISTICS"
+        },
+        {
+          "page": 0,
+          "position": 35,
+          "section_length": 10,
+          "text": "( QW-409)"
+        },
+        {
+          "page": 0,
+          "position": 46,
+          "section_length": 1,
+          "text": "TECHNIQUE : ( QW-410 )"
+        },
+        {
+          "page": 0,
+          "position": 48,
+          "section_length": 9,
+          "text": "POSITION : ( QW-405 )"
+        },
+        {
+          "page": 0,
+          "position": 59,
+          "section_length": 9,
+          "text": "PREHEAT : ( QW-406 )"
+        }
+      ]
+    },
+    "1": {
+      "font_info": {
+        "average_char_height": 34.14989378131987,
+        "average_char_width": 16.355259072834432,
+        "std_dev_char_height": 10.660165351289201,
+        "std_dev_char_width": 3.236752172321751
+      },
+      "line_count": 66,
+      "line_end": 140,
+      "line_start": 74,
+      "page_number": 1,
+      "potential_subtitles": [
+        {
+          "page": 1,
+          "position": 2,
+          "section_length": 1,
+          "text": "QW-483"
+        },
+        {
+          "page": 1,
+          "position": 3,
+          "section_length": 1,
+          "text": "PROCEDURE QUALIFICATION RECORD"
+        },
+        {
+          "page": 1,
+          "position": 5,
+          "section_length": 1,
+          "text": "(PQR)"
+        },
+        {
+          "page": 1,
+          "position": 6,
+          "section_length": 0,
+          "text": "ACERO"
+        },
+        {
+          "page": 1,
+          "position": 6,
+          "section_length": 2,
+          "text": "(ASME SECTION IX 2019 EDITION)"
+        },
+        {
+          "page": 1,
+          "position": 8,
+          "section_length": 1,
+          "text": "PQR NO. : JGAIPL/SS/PQR/01"
+        },
+        {
+          "page": 1,
+          "position": 9,
+          "section_length": 13,
+          "text": "Welding Process(es) : GTAW +"
+        },
+        {
+          "page": 1,
+          "position": 25,
+          "section_length": 7,
+          "text": "TENSILE TEST ( QW-150 )"
+        },
+        {
+          "page": 1,
+          "position": 33,
+          "section_length": 13,
+          "text": "GUIDED-BEND TEST ( QW-160 )"
+        },
+        {
+          "page": 1,
+          "position": 50,
+          "section_length": 5,
+          "text": "with the"
+        },
+        {
+          "page": 1,
+          "position": 57,
+          "section_length": 1,
+          "text": "NCY 8"
+        },
+        {
+          "page": 1,
+          "position": 58,
+          "section_length": 1,
+          "text": "CON"
+        },
+        {
+          "page": 1,
+          "position": 59,
+          "section_length": 4,
+          "text": "SPM"
+        },
+        {
+          "page": 1,
+          "position": 63,
+          "section_length": 1,
+          "text": "7/1/2021"
+        },
+        {
+          "page": 1,
+          "position": 65,
+          "section_length": 0,
+          "text": "7/1/2021"
+        }
+      ]
+    }
+  },
+  "result_text": "\n\n                                           QW -483 \n                             PROCEDURE QUALIFICATION RECORD \n                                             (PQR) \n        ACERO                      (ASME SECTION IX 2019 EDITION) \n  COMPANY NAME: JG ACERO INDUSTRIES PVT.LTD                 Page 1 of 2 \n PQR NO. : JGAIPL/SS/PQR/01                               Date : 07/01/2021 \n Welding Process(es) : GTAW + SMAW Type(s) : Manual      WPS No. : JGAIPL/SS/WPS/01 Rev.0 \n\n JOINTS : (QW-402) :                                   60 \n\n                                                       455 \n                                                        3 \n                                   10 \n                                   mm \n\n                                                          2-2.5 mm \n\n BASE METALS (QW-403)                   POST WELD HEATTREATMENT :(QW -407) \n  P. No. 8 Gr. No. 1 TO P. No. 8 Gr. No. 1 Temperature Range \u2103 : None \n  Material Specification : SA240 TYP 304 To \n                  SA240 TYP 304         Time Range          : None \n Thickness of Test coupon : 10 mm \n\n FILLER METAL : (QW - 404)              GAS : (QW-408)                % Comp    Flow Rate \n                                                           Gas(es)   Mixture    ( lit / min) \n Process            GTAW      SMAW      Shielding         Argon      99.99 %    14 \n\n SFA No.            5.9       5.4       Trailing          None       ---        ---- \n\n AWS ( Class )      ER 308 L E 308 L    Backing           None       ---        ----- \n                                        (Only for root pass) \n F. No.             6         4 \n                                        ELECTRICAL CHARACTERISTICS \n                                        ( QW-409) \n A. No.             8         8         Type of Current : DC Polarity :GTAW- SP , SMAW -RP \n\n Size of Filler     2.4 mm    3.15      Amps : * See Tabulation Volts : * See Tabulation \n Metal (mm) dia                                 On page 2 of 2         On page 2 of 2 \n Weld Metal Thk. (mm) 5 mm    5 mm      Tungsten Electrode   : 3 mm, 2% Thoriated (EWTH) \n                                        Size and Type \n Filler Metal Product Solid   Solid \n                                        Heat Input : Not Recorded \n Form               (Bare) \n Other : Nil \n                                        TECHNIQUE : ( QW-410 ) \n\n POSITION : ( QW-405 )                  String or Weave Bead       : Weave \n                                        Orifice or Gas Cup Size \u00a2 (mm) : 10 mm \n Position(s) of Groove : 3G \n\n                                                                    Wire Brush/Wire wheel \n Weld Progression : Up-Hill             Initial and Inter pass Cleaning : \n                                        Method of Back Gouging     : Grinding \n Other : Nil \n                                        Oscillation                : Not Applicable \n                                        Contact Tube to Work distance ( mm ) : Not Applicable \n\nPREHEAT : ( QW-406 )                    Multiple or single Pass per side : Multiple \n                                        Multiple or Single Electrode : Single \nPreheat Temperature \u00b0C (Min) : Nil \n                                        Travel Speed ( Range ) mm / min *See Tabulation : Page 2 of 2 \nInter pass Temperature \u00b0C (Max) : 150   Peening                    : None \n                                        Other : Weld surface cleaned by wire brush \nPreheat Maintenance   : None \n\n                                                                       20RA    SPM \n                                                                                         * \n\n                                                                             SERVICES \n<<<\f\n\n                                            QW-483 \n                              PROCEDURE QUALIFICATION RECORD \n\n                                              (PQR) \n        ACERO                       (ASME SECTION IX 2019 EDITION) \n COMPANY NAME: JG ACERO INDUSTRIES PVT.LTD                    Page 2 of 2 \n PQR NO. : JGAIPL/SS/PQR/01                                Date : 07/01/2021 \n Welding Process(es) : GTAW + SMAW Type(s) : Manual       WPS No. : JGAIPL/SS/WPS/01 Rev.0 \n\n                                         Use of thermal processes     : Not Applicable \n\n Weld      Process/      Filler Metal         Current     Voltage Travel Maximum \n           es \n Layers                 Class     Dia.   Amp     Type     Range Speed     Heat Input Remark \n                                  mm     Range   Polarity        Range    KJ/mm \n                                                                 mm/min \n  Root Pass GTAW       ER- 308 L   2.0    93-94   DCSP    18-19    38.58 \n   Pass 1   GTAW       ER- 308 L   2.0   102-103 DCSP     18-19     64 \n   Pass 2   SMAW       E- 308 L    3.15 102-103   DCSP    18-19    74.53 \n   Pass 3   SMAW       E- 308 L    3.15   66-67   DCRP    22-23   63.66 \n   Pass 4   SMAW       E- 308 L    3.15   66-67   DCRP    22-23   89.55 \n   Pass 5   SMAW       E- 308 L    3.15   66-67   DCRP    22-23   88.23 \n\n                                  TENSILE TEST ( QW-150 ) \n Specimen Gauge       Thickness Area    Ultimate    Ultimate   Type of Failure & Result \n No.       Width                        Tensile Load Tensile   Location \n           mm         mm       mm2      ( KN )      Strength \n                                                    N/mm2 \n T1        20.16     9.96      200.79   131.66      655.70     In WM.            Satisfactory \n T2        20.18     9.92      200.18   133.80      668.38     In WM.            Satisfactory \n\n                              GUIDED-BEND TEST ( QW-160 ) \n\n     Figure No.                             Type                               Result \n QW462.3(a)                             Root Bend Test 1                      Satisfactory \n QW462.3(a)                             Root Bend Test 2                      Satisfactory \n\nQW462.3(a)                              Face Bend Test 1                      Satisfactory \n\nQW462.3(a)                              Face Bend Test 2                      Satisfactory \n\n                                                          Welder No. : W1+W2 \nWelder Name: Mr. Ranjeet Kushwah + Mehboob Raza \n                                                      Nashik- 422 010 \nTest Conducted By : VSP Testing & Calibration Laboratory, MIDC Ambad , \nLaboratory Test Report No. : E-2890 Dated : 07/01/2021 \n                                               welds were prepared, welded, and tested in accordance \nWe certify that the statements in these records are that the test \nwith the requirement of ASME Section IX Code 2019 Edition \nManufacturer: JG ACERO INDUSTRIES PVT.LTD \n\n                                                   BY                   REVIEWED BY \n           PREPARED BY                    APPROVED \n                                 U \n\n                                         NCY   8 \n                            CON \n                                SPM \n                                        WELDING MANAGER \n        WELDING ENGINEER \n                                                                        CLIENT / TPI \n                  7/1/2021          SPM CONSULTANCY SERVICES \n    SPM CONSULTANCY SERVICES SERVICE              7/1/2021 \n<<<\f",
+  "webhook_metadata": ""
+}

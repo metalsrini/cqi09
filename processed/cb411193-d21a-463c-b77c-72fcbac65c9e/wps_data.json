@@ -1,0 +1,122 @@
+{
+  "document_info": {
+    "wps_number": "JGAIPL/SS/WPS/O1",
+    "revision": "1",
+    "date": "07/01/2021",
+    "company": "JG ACERO INDUSTRIES PVT.LTD.",
+    "welding_process": {
+      "processes": [
+        "GTAW",
+        "SMAW"
+      ],
+      "type": "Manual"
+    },
+    "pqr_reference": "JGAIPL/SS/PQR/O1"
+  },
+  "joints": {
+    "joint_design": "As per applicable Manufacturing Drawing as referenced in (Root face, Root spacing, incl. angle) Weld Plan",
+    "backing": "With backing or without backing as per applicable Manufacturing Drawing as referenced in Weld Plan",
+    "joint_type": "",
+    "groove_angle": "",
+    "root_opening": "",
+    "root_face": ""
+  },
+  "base_metals": {
+    "p_number": "8",
+    "group_number": "1",
+    "material_spec": "",
+    "type_grade": "",
+    "to_p_number": "8",
+    "to_group_number": "1",
+    "thickness_range": "1.5 to 20 mm",
+    "diameter_range": "Any"
+  },
+  "filler_metals": [
+    {
+      "process": "GTAW",
+      "f_number": "6",
+      "a_number": "8",
+      "specification": "SFA No. 5.9",
+      "classification": "ER308L",
+      "filler_size": "2.0, 2.4 mm dia",
+      "filler_type": "Bare (Solid)"
+    },
+    {
+      "process": "SMAW",
+      "f_number": "4",
+      "a_number": "8",
+      "specification": "SFA No. 5.4",
+      "classification": "E308L",
+      "filler_size": "3.15, 4.0 mm dia",
+      "filler_type": "Solid"
+    }
+  ],
+  "position": {
+    "position": "Any",
+    "progression": "Any"
+  },
+  "preheat": {
+    "preheat_temp": "N.A",
+    "interpass_temp": "200",
+    "preheat_maintenance": "None"
+  },
+  "post_weld_heat_treatment": {
+    "pwht_temp": "Not Applicable",
+    "pwht_time": "Not Applicable",
+    "heating_rate": "",
+    "cooling_rate": ""
+  },
+  "gas": {
+    "shielding_gas": "Argon 99.99%",
+    "shielding_flow_rate": "10-12 lit/min",
+    "backing_gas": "None",
+    "backing_flow_rate": ""
+  },
+  "electrical_characteristics": {
+    "current_type": "DC",
+    "polarity": "GTAW- SP (Ele. -Ve), SMAW- RP (Ele.+ Ve)",
+    "amperage_range": "105 A to 144 A",
+    "voltage_range": "GTAW- 12V to 14V, SMAW - 28V to 34V",
+    "tungsten_type": "2% Thoriated (EWTH)",
+    "tungsten_size": "2.0, 2.4, 3.0, 4.0mm",
+    "wire_feed_speed": "",
+    "travel_speed": "50 To 150 mm/min",
+    "heat_input": "* See Tabulation On page 2 of 2",
+    "transfer_mode": "Not Applicable"
+  },
+  "technique": {
+    "string_weave": "String / Weave",
+    "orifice_gas_cup": "6 to 10 mm",
+    "cleaning_method": "Grinding / Wire Brush",
+    "peening": "None",
+    "initial_final_cleaning": "Grinding / Wire Brush",
+    "oscillation": "Not Applicable",
+    "multi_single_pass": "Multiple/Single",
+    "multi_single_electrode": "Single"
+  },
+  "welding_parameter_table": [
+    {
+      "process": "GTAW",
+      "pass_number": "Root Pass",
+      "filler_metal": "ER308L 2.0 mm",
+      "current": "DCEN",
+      "amperage": "120 to 180 A",
+      "voltage": "12 to 14 V",
+      "travel_speed": "50 to 60 mm/min",
+      "heat_input": "Not Recorded"
+    },
+    {
+      "process": "SMAW",
+      "pass_number": "Rest Passes of Side 1 & Side 2",
+      "filler_metal": "E308L 3.15, 4.0 mm",
+      "current": "DCEP",
+      "amperage": "140 to 160 A",
+      "voltage": "28 to 34 V",
+      "travel_speed": "145 to 150 mm/min",
+      "heat_input": "Not Recorded"
+    }
+  ],
+  "reference_standards": [
+    "ASME SECTION IX 2019 EDITION"
+  ]
+}

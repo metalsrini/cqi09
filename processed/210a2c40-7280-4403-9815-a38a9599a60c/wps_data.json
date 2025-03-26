@@ -1,0 +1,22 @@
+{
+  "document_info": {
+    "wps_number": "",
+    "revision": "",
+    "date": "",
+    "company": "",
+    "welding_process": {
+      "processes": []
+    },
+    "pqr_reference": ""
+  },
+  "joints": {},
+  "base_metals": {},
+  "filler_metals": {},
+  "position": {},
+  "preheat": {},
+  "pwht": {},
+  "gas": {},
+  "electrical_characteristics": {},
+  "technique": {},
+  "welding_parameter_table": []
+}

@@ -1,0 +1,213 @@
+{
+  "document_information": {
+    "pqr_number": "JGAIPL/SS/PQR/O1",
+    "revision": "Rev.O",
+    "date": "O7/O1/2O21",
+    "company": "JG ACERO INDUSTRIES PVT.LTD",
+    "welding_process": {
+      "processes": [
+        "GTAW",
+        "SMAW"
+      ]
+    },
+    "wps_reference": "JGAIPL/SS/WPS/O1"
+  },
+  "joints": {
+    "joint_design": "6O 455 3 1O mm",
+    "backing": "",
+    "joint_type": "",
+    "groove_angle": "",
+    "root_opening": "2-2.5 mm",
+    "root_face": ""
+  },
+  "base_metals": {
+    "p_number": "8",
+    "group_number": "1",
+    "material_spec": "SA24O TYP 3O4",
+    "type_grade": "",
+    "to_p_number": "8",
+    "to_group_number": "1",
+    "thickness": "1O mm",
+    "diameter": ""
+  },
+  "filler_metals": [
+    {
+      "process": "GTAW",
+      "f_number": "6",
+      "a_number": "8",
+      "specification": "SFA No. 5.9",
+      "classification": "ER 3O8 L",
+      "filler_size": "2.4 mm",
+      "filler_type": "So1id"
+    },
+    {
+      "process": "SMAW",
+      "f_number": "4",
+      "a_number": "8",
+      "specification": "SFA No. 5.4",
+      "classification": "E 3O8 L",
+      "filler_size": "3.15 mm",
+      "filler_type": "So1id"
+    }
+  ],
+  "position": {
+    "position": "3G",
+    "progression": "Up-Hi11"
+  },
+  "preheat": {
+    "preheat_temp": "Ni1",
+    "interpass_temp": "15O",
+    "preheat_maintenance": "None"
+  },
+  "post_weld_heat_treatment": {
+    "pwht_temp": "None",
+    "pwht_time": "None",
+    "heating_rate": "",
+    "cooling_rate": ""
+  },
+  "gas": {
+    "shielding_gas": "Argon 99.99 %",
+    "shielding_flow_rate": "14",
+    "backing_gas": "None",
+    "backing_flow_rate": ""
+  },
+  "electrical_characteristics": {
+    "current_type": "DC",
+    "polarity": "GTAW- SP , SMAW -RP",
+    "amperage": "* See Tabu1ation",
+    "voltage": "* See Tabu1ation",
+    "tungsten_type": "2% Thoriated (EWTH)",
+    "tungsten_size": "3 mm",
+    "wire_feed_speed": "",
+    "travel_speed": "*See Tabu1ation",
+    "heat_input": "Not Recorded",
+    "transfer_mode": ""
+  },
+  "technique": {
+    "string_weave": "Weave",
+    "orifice_gas_cup": "1O mm",
+    "cleaning_method": "Wire Brush/Wire whee1",
+    "peening": "None",
+    "initial_final_cleaning": "We1d surface c1eaned by wire brush",
+    "oscillation": "Not App1icab1e",
+    "multi_single_pass": "Mu1tip1e",
+    "multi_single_electrode": "Sing1e"
+  },
+  "welding_parameter_table": [
+    {
+      "process": "GTAW",
+      "pass_number": "Root Pass",
+      "filler_metal": "ER- 3O8 L 2.O",
+      "current": "DCSP",
+      "amperage": "93-94",
+      "voltage": "18-19",
+      "travel_speed": "38.58",
+      "heat_input": ""
+    },
+    {
+      "process": "GTAW",
+      "pass_number": "Pass 1",
+      "filler_metal": "ER- 3O8 L 2.O",
+      "current": "DCSP",
+      "amperage": "1O2-1O3",
+      "voltage": "18-19",
+      "travel_speed": "64",
+      "heat_input": ""
+    },
+    {
+      "process": "SMAW",
+      "pass_number": "Pass 2",
+      "filler_metal": "E- 3O8 L 3.15",
+      "current": "DCSP",
+      "amperage": "1O2-1O3",
+      "voltage": "18-19",
+      "travel_speed": "74.53",
+      "heat_input": ""
+    },
+    {
+      "process": "SMAW",
+      "pass_number": "Pass 3",
+      "filler_metal": "E- 3O8 L 3.15",
+      "current": "DCRP",
+      "amperage": "66-67",
+      "voltage": "22-23",
+      "travel_speed": "63.66",
+      "heat_input": ""
+    },
+    {
+      "process": "SMAW",
+      "pass_number": "Pass 4",
+      "filler_metal": "E- 3O8 L 3.15",
+      "current": "DCRP",
+      "amperage": "66-67",
+      "voltage": "22-23",
+      "travel_speed": "89.55",
+      "heat_input": ""
+    },
+    {
+      "process": "SMAW",
+      "pass_number": "Pass 5",
+      "filler_metal": "E- 3O8 L 3.15",
+      "current": "DCRP",
+      "amperage": "66-67",
+      "voltage": "22-23",
+      "travel_speed": "88.23",
+      "heat_input": ""
+    }
+  ],
+  "test_results": {
+    "tensile_test": {
+      "specimens": [
+        {
+          "specimen_number": "T1",
+          "width": "2O.16",
+          "thickness": "9.96",
+          "area": "2OO.79",
+          "ultimate_load": "131.66",
+          "ultimate_strength": "655.7O",
+          "failure_location": "In WM.",
+          "result": "Satisfactory"
+        },
+        {
+          "specimen_number": "T2",
+          "width": "2O.18",
+          "thickness": "9.92",
+          "area": "2OO.18",
+          "ultimate_load": "133.8O",
+          "ultimate_strength": "668.38",
+          "failure_location": "In WM.",
+          "result": "Satisfactory"
+        }
+      ]
+    },
+    "guided_bend_test": {
+      "specimens": [
+        {
+          "specimen_number": "1",
+          "type": "Root Bend Test",
+          "result": "Satisfactory"
+        },
+        {
+          "specimen_number": "2",
+          "type": "Root Bend Test",
+          "result": "Satisfactory"
+        },
+        {
+          "specimen_number": "1",
+          "type": "Face Bend Test",
+          "result": "Satisfactory"
+        },
+        {
+          "specimen_number": "2",
+          "type": "Face Bend Test",
+          "result": "Satisfactory"
+        }
+      ]
+    },
+    "additional_tests": {
+      "impact_test": "",
+      "hardness_test": "",
+      "other_tests": ""
+    }
+  }
+}

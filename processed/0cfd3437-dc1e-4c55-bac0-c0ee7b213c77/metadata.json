@@ -1,0 +1,11 @@
+{
+  "job_id": "0cfd3437-dc1e-4c55-bac0-c0ee7b213c77",
+  "timestamp": "2025-03-26 09:22:42",
+  "wps_filename": "wps_new.pdf",
+  "pqr_filename": "pqr_new.pdf",
+  "wps_job_id": "b3f23ae0-3160-4a7a-b276-0819be44efb5",
+  "pqr_job_id": "523032eb-ab8d-4f77-bab7-358d50a4be3b",
+  "status": "failed",
+  "extraction_quality": "enhanced",
+  "error": "WPS extraction failed: Error calling Llama model: llama_decode returned -3"
+}

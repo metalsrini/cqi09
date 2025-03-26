@@ -1,0 +1,10 @@
+{
+  "job_id": "c388e8af-092b-4a8c-81ba-5f0c0042de61",
+  "timestamp": "2025-03-25 20:02:51",
+  "wps_filename": "wps_new.pdf",
+  "pqr_filename": "pqr_new.pdf",
+  "wps_job_id": "617806dd-fb77-45b6-8bfb-1b64e9bd8fe6",
+  "pqr_job_id": "e498f4ee-0edb-4384-9ef9-0aa2f6ad099a",
+  "status": "processing",
+  "extraction_quality": "enhanced"
+}

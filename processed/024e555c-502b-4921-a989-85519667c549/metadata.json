@@ -1,0 +1,11 @@
+{
+  "job_id": "024e555c-502b-4921-a989-85519667c549",
+  "timestamp": "2025-03-25 21:29:31",
+  "wps_filename": "wps_new_2.pdf",
+  "pqr_filename": "pqr_new_2.pdf",
+  "wps_job_id": "c9cd43bb-6e24-4b80-b50f-2769295ddba6",
+  "pqr_job_id": "bafc7202-4e55-482c-a008-fde55495d01e",
+  "status": "failed",
+  "extraction_quality": "enhanced",
+  "error": "WPS extraction failed: Llama model could not be initialized. Check if the model file exists."
+}

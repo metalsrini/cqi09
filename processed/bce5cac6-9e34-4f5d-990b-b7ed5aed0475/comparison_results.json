@@ -1,0 +1,261 @@
+{
+  "overall_compliance": false,
+  "overall_score": 36,
+  "document_info": {
+    "wps_number": "JGAIPL/SS/WPS/O1",
+    "pqr_number": "",
+    "wps_date": "07/01/2021",
+    "pqr_date": "",
+    "company": "JG ACERO INDUSTRIES PVT.LTD."
+  },
+  "sections": {
+    "joints": {
+      "name": "Joints (QW-402)",
+      "compliance": false,
+      "score": 17,
+      "parameters": [
+        {
+          "name": "Joint Design",
+          "wps_value": "As per applicable Manufacturing Drawing as referenced in (Root face, Root spacing, incl. angle) Weld Plan",
+          "pqr_value": "6O 455 3 1O mm",
+          "compliance": false,
+          "reason": "Values do not match"
+        },
+        {
+          "name": "Backing",
+          "wps_value": "With backing or without backing as per applicable Manufacturing Drawing as referenced in Weld Plan",
+          "pqr_value": "",
+          "compliance": false,
+          "reason": "PQR value is missing"
+        },
+        {
+          "name": "Groove Angle",
+          "wps_value": "",
+          "pqr_value": "",
+          "compliance": true,
+          "reason": "No data available for comparison"
+        },
+        {
+          "name": "Root Opening",
+          "wps_value": "",
+          "pqr_value": "2-2.5 mm",
+          "compliance": false,
+          "reason": "WPS value is missing"
+        }
+      ]
+    },
+    "base_metals": {
+      "name": "Base Metals (QW-403)",
+      "compliance": false,
+      "score": 62,
+      "parameters": [
+        {
+          "name": "P-Number",
+          "wps_value": "8",
+          "pqr_value": "8",
+          "compliance": true,
+          "reason": "Values match exactly"
+        },
+        {
+          "name": "Group Number",
+          "wps_value": "1",
+          "pqr_value": "1",
+          "compliance": true,
+          "reason": "Values match exactly"
+        },
+        {
+          "name": "Material Specification",
+          "wps_value": "",
+          "pqr_value": "SA24O TYP 3O4",
+          "compliance": false,
+          "reason": "WPS value is missing"
+        },
+        {
+          "name": "Type/Grade",
+          "wps_value": "",
+          "pqr_value": "",
+          "compliance": true,
+          "reason": "No data available for comparison"
+        },
+        {
+          "name": "Thickness Range",
+          "wps_value": "1.5 to 20 mm",
+          "pqr_value": "1O mm",
+          "compliance": false,
+          "reason": "Values do not match"
+        }
+      ]
+    },
+    "filler_metals": {
+      "name": "Filler Metals (QW-404)",
+      "compliance": true,
+      "score": 100,
+      "parameters": [
+        {
+          "name": "Filler Metals",
+          "wps_value": "Present",
+          "pqr_value": "Present",
+          "compliance": true,
+          "reason": "Both documents have filler metals information"
+        }
+      ]
+    },
+    "position": {
+      "name": "Position (QW-405)",
+      "compliance": false,
+      "score": 0,
+      "parameters": [
+        {
+          "name": "Position",
+          "wps_value": "Any",
+          "pqr_value": "3G",
+          "compliance": false,
+          "reason": "Values do not match"
+        },
+        {
+          "name": "Progression",
+          "wps_value": "Any",
+          "pqr_value": "Up-Hi11",
+          "compliance": false,
+          "reason": "Values do not match"
+        }
+      ]
+    },
+    "preheat": {
+      "name": "Preheat (QW-406)",
+      "compliance": false,
+      "score": 25,
+      "parameters": [
+        {
+          "name": "Preheat Temperature",
+          "wps_value": "N.A",
+          "pqr_value": "Ni1",
+          "compliance": false,
+          "reason": "Values do not match"
+        },
+        {
+          "name": "Interpass Temperature",
+          "wps_value": "200",
+          "pqr_value": "15O",
+          "compliance": false,
+          "reason": "Values do not match"
+        },
+        {
+          "name": "Preheat Maintenance",
+          "wps_value": "None",
+          "pqr_value": "None",
+          "compliance": true,
+          "reason": "Values match exactly"
+        }
+      ]
+    },
+    "pwht": {
+      "name": "Post-Weld Heat Treatment (QW-407)",
+      "compliance": false,
+      "score": 0,
+      "parameters": [],
+      "issues": [
+        "Section missing in document"
+      ]
+    },
+    "gas": {
+      "name": "Gas (QW-408)",
+      "compliance": false,
+      "score": 29,
+      "parameters": [
+        {
+          "name": "Shielding Gas",
+          "wps_value": "Argon 99.99%",
+          "pqr_value": "Argon 99.99 %",
+          "compliance": false,
+          "reason": "Values do not match"
+        },
+        {
+          "name": "Shielding Flow Rate",
+          "wps_value": "10-12 lit/min",
+          "pqr_value": "14",
+          "compliance": false,
+          "reason": "Values do not match"
+        },
+        {
+          "name": "Backing Gas",
+          "wps_value": "None",
+          "pqr_value": "None",
+          "compliance": true,
+          "reason": "Values match exactly"
+        }
+      ]
+    },
+    "electrical_characteristics": {
+      "name": "Electrical Characteristics (QW-409)",
+      "compliance": false,
+      "score": 25,
+      "parameters": [
+        {
+          "name": "Current Type",
+          "wps_value": "DC",
+          "pqr_value": "DC",
+          "compliance": true,
+          "reason": "Values match exactly"
+        },
+        {
+          "name": "Polarity",
+          "wps_value": "GTAW- SP (Ele. -Ve), SMAW- RP (Ele.+ Ve)",
+          "pqr_value": "GTAW- SP , SMAW -RP",
+          "compliance": false,
+          "reason": "Values do not match"
+        },
+        {
+          "name": "Amperage",
+          "wps_value": "105 A to 144 A",
+          "pqr_value": "* See Tabu1ation",
+          "compliance": false,
+          "reason": "Values do not match"
+        },
+        {
+          "name": "Voltage",
+          "wps_value": "GTAW- 12V to 14V, SMAW - 28V to 34V",
+          "pqr_value": "* See Tabu1ation",
+          "compliance": false,
+          "reason": "Values do not match"
+        }
+      ]
+    },
+    "technique": {
+      "name": "Technique (QW-410)",
+      "compliance": false,
+      "score": 25,
+      "parameters": [
+        {
+          "name": "String/Weave Bead",
+          "wps_value": "String / Weave",
+          "pqr_value": "Weave",
+          "compliance": true,
+          "reason": "Values are compatible"
+        },
+        {
+          "name": "Cleaning Method",
+          "wps_value": "Grinding / Wire Brush",
+          "pqr_value": "Wire Brush/Wire whee1",
+          "compliance": false,
+          "reason": "Values do not match"
+        },
+        {
+          "name": "Multi/Single Pass",
+          "wps_value": "Multiple/Single",
+          "pqr_value": "Mu1tip1e",
+          "compliance": false,
+          "reason": "Values do not match"
+        },
+        {
+          "name": "Multi/Single Electrode",
+          "wps_value": "Single",
+          "pqr_value": "Sing1e",
+          "compliance": false,
+          "reason": "Values do not match"
+        }
+      ]
+    }
+  },
+  "critical_issues": []
+}

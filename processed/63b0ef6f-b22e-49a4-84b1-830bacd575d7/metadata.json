@@ -1,0 +1,16 @@
+{
+  "job_id": "63b0ef6f-b22e-49a4-84b1-830bacd575d7",
+  "original_filename": "wps_new.pdf",
+  "timestamp": "20250325_203043",
+  "status": "completed",
+  "file_extension": "pdf",
+  "extraction_quality": "high",
+  "processing_time": "N/A",
+  "ocr_parameters": {
+    "mode": "form",
+    "output_mode": "layout_preserving",
+    "add_line_nos": "true",
+    "mark_vertical_lines": "true",
+    "mark_horizontal_lines": "true"
+  }
+}

@@ -1,0 +1,268 @@
+{% extends "base.html" %}
+
+{% block title %}WPS/PQR Comparison{% endblock %}
+
+{% block header %}WPS/PQR Side-by-Side Comparison{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">
+                    <i class="fas fa-file-upload me-2"></i>Upload WPS & PQR Documents
+                </h5>
+            </div>
+            <div class="card-body">
+                <form id="upload-form" action="{{ url_for('upload_wps_pqr') }}" method="post" enctype="multipart/form-data" class="mb-0">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        Upload WPS and PQR documents to view a side-by-side comparison of all QW sections.
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="upload-area p-4 border rounded text-center position-relative" id="wps-drop-area">
+                                <div class="upload-icon mb-3">
+                                    <i class="fas fa-file-upload fa-3x text-primary"></i>
+                                </div>
+                                <h5 class="mb-3">Drop WPS file here or click to browse</h5>
+                                <p class="text-muted small mb-3">Supported formats: PDF, JPG, PNG</p>
+                                <input type="file" class="form-control d-none" id="wps-file" name="wps_file" accept=".pdf,.jpg,.jpeg,.png" required>
+                                <button type="button" class="btn btn-outline-primary" onclick="document.getElementById('wps-file').click()">
+                                    Select WPS File
+                                </button>
+                                <div id="wps-file-name" class="mt-3 text-primary fw-bold"></div>
+                                <div id="wps-upload-success" class="position-absolute top-0 end-0 m-2 d-none">
+                                    <i class="fas fa-check-circle text-success fa-2x"></i>
+                                </div>
+                            </div>
+                            <div id="wps-preview" class="mt-3"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="upload-area p-4 border rounded text-center position-relative" id="pqr-drop-area">
+                                <div class="upload-icon mb-3">
+                                    <i class="fas fa-file-upload fa-3x text-secondary"></i>
+                                </div>
+                                <h5 class="mb-3">Drop PQR file here or click to browse</h5>
+                                <p class="text-muted small mb-3">Supported formats: PDF, JPG, PNG</p>
+                                <input type="file" class="form-control d-none" id="pqr-file" name="pqr_file" accept=".pdf,.jpg,.jpeg,.png" required>
+                                <button type="button" class="btn btn-outline-secondary" onclick="document.getElementById('pqr-file').click()">
+                                    Select PQR File
+                                </button>
+                                <div id="pqr-file-name" class="mt-3 text-secondary fw-bold"></div>
+                                <div id="pqr-upload-success" class="position-absolute top-0 end-0 m-2 d-none">
+                                    <i class="fas fa-check-circle text-success fa-2x"></i>
+                                </div>
+                            </div>
+                            <div id="pqr-preview" class="mt-3"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg" id="upload-btn" disabled>
+                            <i class="fas fa-upload me-2"></i>Compare Documents
+                        </button>
+                    </div>
+                    
+                    <div class="mt-4" id="upload-status-container" style="display: none;">
+                        <div class="progress" style="height: 25px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                 role="progressbar" 
+                                 style="width: 0%" 
+                                 id="upload-progress-bar">0%</div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <p class="mt-2 mb-0 text-primary fw-bold" id="status-text">Processing documents...</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // File upload handling for WPS
+    $('#wps-file').on('change', function() {
+        const file = this.files[0];
+        if (file) {
+            $('#wps-file-name').text(file.name);
+            $('#wps-upload-success').removeClass('d-none');
+            showFilePreview(file, 'wps-preview');
+            updateUploadButton();
+        }
+    });
+    
+    // File upload handling for PQR
+    $('#pqr-file').on('change', function() {
+        const file = this.files[0];
+        if (file) {
+            $('#pqr-file-name').text(file.name);
+            $('#pqr-upload-success').removeClass('d-none');
+            showFilePreview(file, 'pqr-preview');
+            updateUploadButton();
+        }
+    });
+    
+    // Show file preview
+    function showFilePreview(file, previewElementId) {
+        const preview = $('#' + previewElementId);
+        preview.empty();
+        
+        if (file.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                $('<img>').attr({
+                    src: e.target.result,
+                    class: 'img-fluid border rounded',
+                    alt: 'File Preview'
+                }).appendTo(preview);
+            }
+            reader.readAsDataURL(file);
+        } else if (file.type === 'application/pdf') {
+            preview.html(`<div class="alert alert-success">
+                <i class="fas fa-file-pdf me-2"></i>PDF selected: ${file.name} (${(file.size / 1024).toFixed(1)} KB)
+            </div>`);
+        } else {
+            preview.html(`<div class="alert alert-secondary">
+                <i class="fas fa-file me-2"></i>File selected: ${file.name} (${(file.size / 1024).toFixed(1)} KB)
+            </div>`);
+        }
+    }
+    
+    // Update upload button state
+    function updateUploadButton() {
+        const wpsFile = $('#wps-file')[0].files[0];
+        const pqrFile = $('#pqr-file')[0].files[0];
+        const uploadBtn = $('#upload-btn');
+        
+        if (wpsFile && pqrFile) {
+            uploadBtn.prop('disabled', false);
+        } else {
+            uploadBtn.prop('disabled', true);
+        }
+    }
+    
+    // Drag and drop handling for WPS
+    $('#wps-drop-area').on('dragover', function(e) {
+        e.preventDefault();
+        $(this).addClass('border-primary');
+    }).on('dragleave', function(e) {
+        e.preventDefault();
+        $(this).removeClass('border-primary');
+    }).on('drop', function(e) {
+        e.preventDefault();
+        $(this).removeClass('border-primary');
+        
+        if (e.originalEvent.dataTransfer.files.length) {
+            $('#wps-file')[0].files = e.originalEvent.dataTransfer.files;
+            $('#wps-file').trigger('change');
+        }
+    });
+    
+    // Drag and drop handling for PQR
+    $('#pqr-drop-area').on('dragover', function(e) {
+        e.preventDefault();
+        $(this).addClass('border-secondary');
+    }).on('dragleave', function(e) {
+        e.preventDefault();
+        $(this).removeClass('border-secondary');
+    }).on('drop', function(e) {
+        e.preventDefault();
+        $(this).removeClass('border-secondary');
+        
+        if (e.originalEvent.dataTransfer.files.length) {
+            $('#pqr-file')[0].files = e.originalEvent.dataTransfer.files;
+            $('#pqr-file').trigger('change');
+        }
+    });
+    
+    // Form submission handling
+    $('#upload-form').on('submit', function(e) {
+        const statusContainer = $('#upload-status-container');
+        const progressBar = $('#upload-progress-bar');
+        const statusText = $('#status-text');
+        const uploadBtn = $('#upload-btn');
+        
+        // Show progress container
+        statusContainer.show();
+        
+        // Disable upload button
+        uploadBtn.prop('disabled', true)
+            .html('<i class="fas fa-spinner fa-spin me-2"></i>Processing...');
+        
+        // Progress simulation
+        let progress = 0;
+        const progressInterval = setInterval(() => {
+            progress += 2;
+            if (progress <= 98) {
+                progressBar.css('width', progress + '%')
+                          .text(progress + '%');
+            }
+        }, 200);
+        
+        // Status messages
+        const statusMessages = [
+            'Uploading documents...',
+            'Processing files...',
+            'Extracting text...',
+            'Analyzing content...',
+            'Generating comparison...'
+        ];
+        
+        let messageIndex = 0;
+        const messageInterval = setInterval(() => {
+            messageIndex = (messageIndex + 1) % statusMessages.length;
+            statusText.fadeOut(200, function() {
+                $(this).text(statusMessages[messageIndex]).fadeIn(200);
+            });
+        }, 2000);
+        
+        // Store intervals for cleanup
+        window.progressInterval = progressInterval;
+        window.messageInterval = messageInterval;
+    });
+</script>
+
+<style>
+    .upload-area {
+        transition: all 0.3s ease;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .upload-area:hover {
+        background-color: rgba(0,0,0,0.02);
+    }
+    
+    #upload-status-container {
+        background: rgba(255,255,255,0.9);
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    
+    .progress {
+        background-color: #e9ecef;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .progress-bar {
+        background-color: #0d6efd;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 25px;
+    }
+</style>
+{% endblock %} 

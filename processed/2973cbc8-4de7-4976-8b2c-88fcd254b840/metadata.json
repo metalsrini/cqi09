@@ -1,0 +1,16 @@
+{
+  "job_id": "2973cbc8-4de7-4976-8b2c-88fcd254b840",
+  "original_filename": "pqr_new.pdf",
+  "timestamp": "20250325_211907",
+  "status": "completed",
+  "file_extension": "pdf",
+  "extraction_quality": "high",
+  "processing_time": "N/A",
+  "ocr_parameters": {
+    "mode": "form",
+    "output_mode": "layout_preserving",
+    "add_line_nos": "true",
+    "mark_vertical_lines": "true",
+    "mark_horizontal_lines": "true"
+  }
+}
