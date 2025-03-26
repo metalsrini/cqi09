@@ -1,10 +1,13 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# C extensions
 *.so
+
+# Distribution / packaging
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -21,21 +24,50 @@ wheels/
 .installed.cfg
 *.egg
 
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Flask stuff:
+instance/
+.webassets-cache
+
 # Jupyter Notebook
 .ipynb_checkpoints
-*/.ipynb_checkpoints/*
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# Application specific directories
+/uploads/
+/processed/
+app.log
+
+# Virtual environment
+venv/
+env/
 
 # VS Code
 .vscode/
 *.code-workspace
 
-# macOS
-.DS_Store
-
 # Logs
 *.log
 
 # Local development
-.env
 .env.local
 .env.*.local 

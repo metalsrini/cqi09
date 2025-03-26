@@ -21,7 +21,6 @@ import uuid
 from flask import Flask, render_template, request, jsonify, redirect, url_for, flash, session
 from werkzeug.utils import secure_filename
 from openai import OpenAI
-from unstract.llmwhisperer import LLMWhispererClientV2
 from dotenv import load_dotenv
 import jinja2
 import requests
@@ -101,26 +100,30 @@ def get_file_extension(filename):
 
 # Initialize clients
 def init_llmwhisperer_client():
-    # Standard client initialization
+    """
+    Modified to return API headers and base URL instead of a client object
+    """
     if not LLM_WHISPERER_API_KEY:
         app.logger.error("LLMWhisperer API key is not set. Set the LLM_WHISPERER_API_KEY environment variable.")
         return None
-    return LLMWhispererClientV2(
-        base_url=LLM_WHISPERER_API_URL,
-        api_key=LLM_WHISPERER_API_KEY
-    )
+    
+    # Return the API information needed for direct calls
+    return {
+        "base_url": LLM_WHISPERER_API_URL,
+        "headers": {"unstract-key": LLM_WHISPERER_API_KEY}
+    }
 
-# Process PDF with LLMWhisperer
+# Process PDF with direct LLMWhisperer API calls
 def process_pdf(file_path, original_filename):
-    """Process a PDF file with LLMWhisperer and return the extracted text"""
+    """Process a PDF file with LLMWhisperer API directly and return the extracted text"""
     
-    client = init_llmwhisperer_client()
+    api_info = init_llmwhisperer_client()
     
-    # Check if client was initialized successfully
-    if client is None:
+    # Check if API info was initialized successfully
+    if api_info is None:
         return {
             'success': False,
-            'error': 'LLMWhisperer client could not be initialized. API key may be missing.'
+            'error': 'LLMWhisperer API information could not be initialized. API key may be missing.'
         }
     
     try:
@@ -133,9 +136,6 @@ def process_pdf(file_path, original_filename):
         # Log the extraction processing information
         app.logger.info(f"Processing document {original_filename} with high-quality OCR settings")
         app.logger.info(f"File extension: {file_extension}")
-        
-        # API parameters for high-quality OCR (based on LLMWhisperer API docs)
-        # We'll construct a custom URL with the parameters since extraction_options is not supported
         
         # Define base parameters for better extraction
         params = {
@@ -166,25 +166,25 @@ def process_pdf(file_path, original_filename):
         
         # Log the parameters being used
         app.logger.info(f"Using LLMWhisperer parameters: {params}")
-        
-        # Check if custom URL parameters are supported
-        # If not supported, the code will fall back to default settings
+
+        # Call the API directly using requests
         try:
-            # Build a custom URL with query parameters
-            api_endpoint = client._build_url('whisper')
+            # Prepare API endpoint for the whisper request
+            whisper_endpoint = f"{api_info['base_url']}/whisper"
             
             # Open the file in binary mode
             with open(file_path, 'rb') as f:
                 file_data = f.read()
             
-            # Call the API directly using the client's session to maintain auth
-            headers = {'Content-Type': 'application/octet-stream'}
-            headers.update(client._get_headers())
+            # Set headers for file upload
+            headers = api_info['headers'].copy()
+            headers['Content-Type'] = 'application/octet-stream'
             
-            response = client._session.post(
-                api_endpoint, 
+            # Make the API request to submit the document
+            response = requests.post(
+                whisper_endpoint,
                 params=params,
-                headers=headers, 
+                headers=headers,
                 data=file_data
             )
             
@@ -200,31 +200,62 @@ def process_pdf(file_path, original_filename):
                 start_time = time.time()
                 max_wait_time = 600  # 10 minutes
                 
+                # Poll for status until complete or timeout
                 while (time.time() - start_time) < max_wait_time:
-                    status = client.whisper_status(whisper_hash)
-                    if status.get('status') == 'processed':
-                        # Extraction complete, retrieve the result
-                        result = client.whisper_retrieve(whisper_hash)
+                    # Call status API
+                    status_endpoint = f"{api_info['base_url']}/whisper-status"
+                    status_response = requests.get(
+                        status_endpoint,
+                        params={'whisper_hash': whisper_hash},
+                        headers=api_info['headers']
+                    )
+                    
+                    if status_response.status_code != 200:
+                        raise Exception(f"Status check failed: {status_response.text}")
+                    
+                    status_data = status_response.json()
+                    status = status_data.get('status')
+                    
+                    if status == 'processed':
+                        # Processing complete, retrieve the text
                         break
-                    elif status.get('status') in ['unknown', 'error']:
-                        raise Exception(f"Error during extraction: {status}")
+                    elif status in ['unknown', 'error']:
+                        raise Exception(f"Error during extraction: {status_data}")
                     
                     # Wait before polling again
                     time.sleep(5)
                 else:
                     # Timeout exceeded
                     raise Exception("Extraction timeout exceeded")
+                
+                # Retrieve the processed text
+                retrieve_endpoint = f"{api_info['base_url']}/whisper-retrieve"
+                retrieve_response = requests.get(
+                    retrieve_endpoint,
+                    params={'whisper_hash': whisper_hash, 'text_only': 'true'},
+                    headers=api_info['headers']
+                )
+                
+                if retrieve_response.status_code != 200:
+                    raise Exception(f"Text retrieval failed: {retrieve_response.text}")
+                
+                # Get the extracted text directly from the response
+                extracted_text = retrieve_response.text
+                
+                # Create result structure similar to the original client response
+                result = {
+                    'extraction': {
+                        'result_text': extracted_text,
+                        'processing_time': time.time() - start_time
+                    },
+                    'status': 'success'
+                }
             else:
                 raise Exception(f"API error: {response.status_code} - {response.text}")
                 
-        except Exception as custom_api_error:
-            # Fall back to standard method if custom API call fails
-            app.logger.warning(f"Custom API call failed, falling back to standard method: {custom_api_error}")
-            result = client.whisper(
-                file_path=file_path,
-                wait_for_completion=True,
-                wait_timeout=600  # 10 minutes timeout
-            )
+        except Exception as api_error:
+            app.logger.error(f"API call failed: {str(api_error)}")
+            raise
         
         # Extract text
         if 'extraction' in result and 'result_text' in result['extraction']:
