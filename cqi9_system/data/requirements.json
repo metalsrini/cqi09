@@ -1,0 +1,101 @@
+[
+  {
+    "id": "REQ-3.1.1-1",
+    "text": "Temperature uniformity surveys shall be performed in accordance with the requirements of this section.",
+    "section": "3.1.1",
+    "category": "mandatory",
+    "criticality": "high",
+    "rationale": "Ensures that temperature uniformity is consistently maintained within the furnace.",
+    "verification_method": "Review of TUS documentation"
+  },
+  {
+    "id": "REQ-3.1.1-2",
+    "text": "The temperature uniformity survey shall be conducted at the minimum and maximum operating temperatures of the furnace.",
+    "section": "3.1.1",
+    "category": "mandatory",
+    "criticality": "high",
+    "rationale": "Verifies that temperature uniformity is maintained across the operating range.",
+    "verification_method": "Review of TUS documentation"
+  },
+  {
+    "id": "REQ-3.1.1-3",
+    "text": "Temperature uniformity surveys shall use calibrated thermocouples placed in the work zone.",
+    "section": "3.1.1",
+    "category": "mandatory",
+    "criticality": "high",
+    "rationale": "Ensures accurate measurement of temperature across the furnace work zone.",
+    "verification_method": "Review of TUS documentation and thermocouple calibration records"
+  },
+  {
+    "id": "REQ-3.1.2-1",
+    "text": "Initial temperature uniformity surveys shall be conducted prior to production use.",
+    "section": "3.1.2",
+    "category": "mandatory",
+    "criticality": "high",
+    "rationale": "Establishes baseline for temperature uniformity before actual production use.",
+    "verification_method": "Review of initial TUS documentation"
+  },
+  {
+    "id": "REQ-3.1.2-2",
+    "text": "Temperature uniformity surveys shall be conducted at least quarterly for continuous furnaces and at least annually for batch furnaces.",
+    "section": "3.1.2",
+    "category": "mandatory",
+    "criticality": "medium",
+    "rationale": "Ensures ongoing verification of temperature uniformity at appropriate intervals.",
+    "verification_method": "Review of TUS schedule and completed surveys"
+  },
+  {
+    "id": "REQ-3.2.1-1",
+    "text": "System accuracy tests shall be performed at least quarterly.",
+    "section": "3.2.1",
+    "category": "mandatory",
+    "criticality": "medium",
+    "rationale": "Ensures regular verification of temperature measurement system accuracy.",
+    "verification_method": "Review of SAT documentation"
+  },
+  {
+    "id": "REQ-3.2.1-2",
+    "text": "System accuracy tests shall be performed by comparing the furnace temperature controller reading to a calibrated test instrument.",
+    "section": "3.2.1",
+    "category": "mandatory",
+    "criticality": "high",
+    "rationale": "Verifies the accuracy of the temperature control system.",
+    "verification_method": "Review of SAT documentation and procedure"
+  },
+  {
+    "id": "REQ-3.3-1",
+    "text": "All thermocouples used for temperature uniformity surveys shall be calibrated.",
+    "section": "3.3",
+    "category": "mandatory",
+    "criticality": "high",
+    "rationale": "Ensures accurate temperature measurement during surveys.",
+    "verification_method": "Review of thermocouple calibration records"
+  },
+  {
+    "id": "REQ-3.4-1",
+    "text": "Process parameters shall be documented and controlled.",
+    "section": "3.4",
+    "category": "mandatory",
+    "criticality": "high",
+    "rationale": "Ensures consistent and repeatable thermal processing.",
+    "verification_method": "Review of process documentation and records"
+  },
+  {
+    "id": "REQ-4.1-1",
+    "text": "All equipment used for thermal processing shall be calibrated at defined intervals.",
+    "section": "4.1",
+    "category": "mandatory",
+    "criticality": "high",
+    "rationale": "Ensures accuracy and reliability of thermal processing equipment.",
+    "verification_method": "Review of calibration records and schedules"
+  },
+  {
+    "id": "REQ-4.2-1",
+    "text": "Preventive maintenance shall be performed on thermal processing equipment according to a defined schedule.",
+    "section": "4.2",
+    "category": "mandatory",
+    "criticality": "medium",
+    "rationale": "Ensures reliable operation and prevents equipment failures.",
+    "verification_method": "Review of maintenance records and schedules"
+  }
+] 

@@ -1,0 +1,858 @@
+2025-05-19 10:54:00,943 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://192.168.1.6:5050
+2025-05-19 10:54:00,943 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 10:54:00,975 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 10:54:01,087 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 10:54:01,098 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 10:54:05,163 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:54:05] "GET / HTTP/1.1" 200 -
+2025-05-19 10:54:05,239 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:54:05] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-19 10:54:05,239 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:54:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-19 10:54:06,161 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:54:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-19 10:54:15,071 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:54:15] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 10:54:15,089 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:54:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 10:54:15,089 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:54:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 10:54:21,691 - fsevents - DEBUG - NativeEvent(path="/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", inode=133602314, flags=10400, id=23356070): is_file, is_inode_meta_mod
+2025-05-19 10:54:21,692 - fsevents - DEBUG - queue_event FileModifiedEvent(src_path='/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', dest_path='', event_type='modified', is_directory=False, is_synthetic=False)
+2025-05-19 10:54:21,694 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 10:54:21,702 - fsevents - DEBUG - NativeEvent(path="/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", inode=133602314, flags=11400, id=23356073): is_file, is_inode_meta_mod, is_modified
+2025-05-19 10:54:21,703 - fsevents - DEBUG - queue_event FileModifiedEvent(src_path='/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', dest_path='', event_type='modified', is_directory=False, is_synthetic=False)
+2025-05-19 10:54:21,703 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 10:54:22,286 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 10:54:22,478 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 10:54:22,487 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 10:54:23,006 - fsevents - DEBUG - NativeEvent(path="/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", inode=133602314, flags=11400, id=23356147): is_file, is_inode_meta_mod, is_modified
+2025-05-19 10:54:23,007 - fsevents - DEBUG - queue_event FileModifiedEvent(src_path='/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', dest_path='', event_type='modified', is_directory=False, is_synthetic=False)
+2025-05-19 10:54:23,008 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 10:54:23,546 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 10:54:23,660 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 10:54:23,667 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 10:54:45,989 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 10:54:45,989 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 10:54:46,826 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 10:54:47,006 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 10:54:47,017 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 10:54:48,879 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 10:54:48,880 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 10:54:49,088 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 10:54:49,200 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 10:54:49,207 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 10:56:27,652 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:56:27] "GET / HTTP/1.1" 200 -
+2025-05-19 10:56:27,722 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:56:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 10:56:27,722 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:56:27] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 10:56:29,026 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:56:29] "GET /audits HTTP/1.1" 200 -
+2025-05-19 10:56:29,040 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:56:29] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 10:56:29,040 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 10:56:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 10:56:34,574 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 10:56:34,584 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 10:56:34,889 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 10:56:35,090 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 10:56:35,103 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 10:56:36,340 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 10:56:37,167 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 10:56:37,282 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 10:56:37,289 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 10:56:37,430 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 10:56:38,339 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 10:56:38,453 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 10:56:38,462 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 15:36:44,252 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://192.168.1.6:5050
+2025-05-19 15:36:44,252 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 15:36:44,282 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 15:36:44,389 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 15:36:44,399 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 15:36:55,028 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:36:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-19 15:36:55,047 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:36:55] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-19 15:36:55,047 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:36:55] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-19 15:36:55,065 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:36:55] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-19 15:36:55,113 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:36:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-19 15:39:44,886 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://192.168.1.6:5050
+2025-05-19 15:39:44,888 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 15:39:44,897 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 15:39:45,011 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 15:39:45,023 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 15:40:02,019 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:40:02] "GET / HTTP/1.1" 200 -
+2025-05-19 15:40:02,052 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:40:02] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-19 15:40:02,052 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:40:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-19 15:40:02,180 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:40:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-19 15:40:04,228 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:40:04] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 15:40:04,239 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:40:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 15:40:04,239 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:40:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 15:58:31,580 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 15:58:31,581 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 15:58:31,605 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 15:58:31,709 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 15:58:31,722 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 15:59:28,495 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:59:28] "GET / HTTP/1.1" 200 -
+2025-05-19 15:59:28,762 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:59:28] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-19 15:59:28,764 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:59:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-19 15:59:29,477 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:59:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-19 15:59:30,453 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:59:30] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 15:59:30,467 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:59:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 15:59:30,468 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 15:59:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 16:15:20,100 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 16:15:20,101 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 16:15:20,111 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 16:15:20,224 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 16:15:20,236 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 16:15:33,878 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:15:33] "GET / HTTP/1.1" 200 -
+2025-05-19 16:15:33,911 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:15:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 16:15:33,911 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:15:33] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 16:15:33,938 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:15:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-19 16:15:36,153 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:15:36] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 16:15:36,161 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:15:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 16:15:36,161 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:15:36] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 16:20:57,341 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 16:20:57,341 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 16:20:57,351 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 16:20:57,468 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 16:20:57,481 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 16:21:04,862 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:21:04] "GET / HTTP/1.1" 200 -
+2025-05-19 16:21:04,911 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:21:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 16:21:04,911 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:21:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 16:21:07,151 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:21:07] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 16:21:07,162 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:21:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 16:21:07,162 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:21:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 16:31:55,427 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 16:31:55,428 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 16:31:55,439 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 16:31:55,554 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 16:31:55,564 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 16:32:07,952 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:32:07] "GET / HTTP/1.1" 200 -
+2025-05-19 16:32:08,071 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:32:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 16:32:08,072 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:32:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 16:32:08,132 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:32:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-19 16:32:09,264 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:32:09] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 16:32:09,276 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:32:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 16:32:09,283 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 16:32:09] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 17:17:03,748 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 17:17:03,749 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 17:17:03,781 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 17:17:03,901 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 17:17:03,917 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 17:17:11,491 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:17:11] "GET / HTTP/1.1" 200 -
+2025-05-19 17:17:11,564 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:17:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 17:17:11,564 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:17:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 17:17:12,692 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:17:12] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 17:17:12,704 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:17:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 17:17:12,705 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:17:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 17:23:37,266 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 17:23:37,272 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 17:23:37,326 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 17:23:37,341 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 17:23:37,341 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/__init__.py', reloading
+2025-05-19 17:23:37,382 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/__init__.py', reloading
+2025-05-19 17:23:37,426 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/__init__.py', reloading
+2025-05-19 17:23:37,456 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/__init__.py', reloading
+2025-05-19 17:23:37,503 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/__init__.py', reloading
+2025-05-19 17:23:37,552 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/__init__.py', reloading
+2025-05-19 17:23:37,564 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/__init__.py', reloading
+2025-05-19 17:23:37,593 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/__init__.py', reloading
+2025-05-19 17:23:37,612 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/__init__.py', reloading
+2025-05-19 17:23:37,640 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/run_web_portal.py', reloading
+2025-05-19 17:23:37,659 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/config/config.py', reloading
+2025-05-19 17:23:37,718 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/graph_manager.py', reloading
+2025-05-19 17:23:37,740 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/schema.py', reloading
+2025-05-19 17:23:37,767 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/loader.py', reloading
+2025-05-19 17:23:37,796 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/visualizer.py', reloading
+2025-05-19 17:23:37,825 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/document_processor.py', reloading
+2025-05-19 17:23:37,853 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/form_extractor.py', reloading
+2025-05-19 17:23:37,879 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/analysis_agent.py', reloading
+2025-05-19 17:23:37,912 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/app.py', reloading
+2025-05-19 17:23:37,933 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/main.py', reloading
+2025-05-19 17:23:38,054 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 17:23:38,329 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 17:23:38,352 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 17:23:38,613 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/__init__.py', reloading
+2025-05-19 17:23:38,650 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/__init__.py', reloading
+2025-05-19 17:23:38,654 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/__init__.py', reloading
+2025-05-19 17:23:38,654 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/__init__.py', reloading
+2025-05-19 17:23:38,660 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/__init__.py', reloading
+2025-05-19 17:23:38,660 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/__init__.py', reloading
+2025-05-19 17:23:38,660 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/__init__.py', reloading
+2025-05-19 17:23:38,678 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/__init__.py', reloading
+2025-05-19 17:23:38,680 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/__init__.py', reloading
+2025-05-19 17:23:38,680 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/__init__.py', reloading
+2025-05-19 17:23:38,680 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/__init__.py', reloading
+2025-05-19 17:23:38,688 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/run_web_portal.py', reloading
+2025-05-19 17:23:38,689 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/__init__.py', reloading
+2025-05-19 17:23:38,699 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/run_web_portal.py', reloading
+2025-05-19 17:23:38,958 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/config/config.py', reloading
+2025-05-19 17:23:38,997 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/graph_manager.py', reloading
+2025-05-19 17:23:38,997 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/schema.py', reloading
+2025-05-19 17:23:39,023 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/config/config.py', reloading
+2025-05-19 17:23:39,037 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/visualizer.py', reloading
+2025-05-19 17:23:39,040 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/loader.py', reloading
+2025-05-19 17:23:39,041 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/document_processor.py', reloading
+2025-05-19 17:23:39,041 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/app.py', reloading
+2025-05-19 17:23:39,041 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/form_extractor.py', reloading
+2025-05-19 17:23:39,041 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/analysis_agent.py', reloading
+2025-05-19 17:23:39,066 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/main.py', reloading
+2025-05-19 17:23:39,081 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/graph_manager.py', reloading
+2025-05-19 17:23:39,081 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/schema.py', reloading
+2025-05-19 17:23:39,081 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/document_processor.py', reloading
+2025-05-19 17:23:39,085 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/visualizer.py', reloading
+2025-05-19 17:23:39,094 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/app.py', reloading
+2025-05-19 17:23:39,094 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/analysis_agent.py', reloading
+2025-05-19 17:23:39,094 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/main.py', reloading
+2025-05-19 17:23:39,095 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/loader.py', reloading
+2025-05-19 17:23:39,106 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/form_extractor.py', reloading
+2025-05-19 17:23:39,336 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/test_analysis.py', reloading
+2025-05-19 17:23:39,351 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/test_analysis.py', reloading
+2025-05-19 17:23:39,451 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 17:23:39,672 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 17:23:39,685 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 17:23:40,365 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/test_analysis.py', reloading
+2025-05-19 17:23:40,376 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/test_analysis.py', reloading
+2025-05-19 17:23:40,768 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 17:23:41,058 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 17:23:41,079 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 17:23:53,242 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 17:23:53,262 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 17:23:53,276 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 17:23:53,525 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/__init__.py', reloading
+2025-05-19 17:23:53,525 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/__init__.py', reloading
+2025-05-19 17:23:53,526 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/__init__.py', reloading
+2025-05-19 17:23:53,536 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/__init__.py', reloading
+2025-05-19 17:23:53,536 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/__init__.py', reloading
+2025-05-19 17:23:53,536 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/__init__.py', reloading
+2025-05-19 17:23:53,545 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/__init__.py', reloading
+2025-05-19 17:23:53,546 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/run_web_portal.py', reloading
+2025-05-19 17:23:53,546 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/__init__.py', reloading
+2025-05-19 17:23:53,557 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/run_web_portal.py', reloading
+2025-05-19 17:23:53,566 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/config/config.py', reloading
+2025-05-19 17:23:53,579 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/config/config.py', reloading
+2025-05-19 17:23:53,581 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/graph_manager.py', reloading
+2025-05-19 17:23:53,581 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/schema.py', reloading
+2025-05-19 17:23:53,589 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/graph_manager.py', reloading
+2025-05-19 17:23:53,590 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/loader.py', reloading
+2025-05-19 17:23:53,590 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/schema.py', reloading
+2025-05-19 17:23:53,590 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/visualizer.py', reloading
+2025-05-19 17:23:53,601 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/loader.py', reloading
+2025-05-19 17:23:53,601 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/visualizer.py', reloading
+2025-05-19 17:23:53,613 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/form_extractor.py', reloading
+2025-05-19 17:23:53,637 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/main.py', reloading
+2025-05-19 17:23:53,640 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/analysis_agent.py', reloading
+2025-05-19 17:23:53,647 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/main.py', reloading
+2025-05-19 17:23:53,650 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/app.py', reloading
+2025-05-19 17:23:53,657 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/app.py', reloading
+2025-05-19 17:23:53,678 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/document_processor.py', reloading
+2025-05-19 17:23:53,739 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/test_analysis.py', reloading
+2025-05-19 17:23:54,349 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 17:23:54,779 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 17:23:54,796 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 17:23:55,117 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 17:23:55,119 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 17:23:55,134 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_app.py', reloading
+2025-05-19 17:23:55,590 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/__init__.py', reloading
+2025-05-19 17:23:55,595 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/__init__.py', reloading
+2025-05-19 17:23:55,597 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/__init__.py', reloading
+2025-05-19 17:23:55,600 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/__init__.py', reloading
+2025-05-19 17:23:55,611 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/__init__.py', reloading
+2025-05-19 17:23:55,614 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/config/config.py', reloading
+2025-05-19 17:23:55,615 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/graph_manager.py', reloading
+2025-05-19 17:23:55,616 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/schema.py', reloading
+2025-05-19 17:23:55,619 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/loader.py', reloading
+2025-05-19 17:23:55,619 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/visualizer.py', reloading
+2025-05-19 17:23:55,620 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/document_processor.py', reloading
+2025-05-19 17:23:55,620 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/form_extractor.py', reloading
+2025-05-19 17:23:55,620 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/__init__.py', reloading
+2025-05-19 17:23:55,620 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/__init__.py', reloading
+2025-05-19 17:23:55,620 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/schema.py', reloading
+2025-05-19 17:23:55,620 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/graph_manager.py', reloading
+2025-05-19 17:23:55,620 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/__init__.py', reloading
+2025-05-19 17:23:55,626 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/config/config.py', reloading
+2025-05-19 17:23:55,631 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/loader.py', reloading
+2025-05-19 17:23:55,635 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/visualizer.py', reloading
+2025-05-19 17:23:55,640 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/analysis_agent.py', reloading
+2025-05-19 17:23:55,644 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/document_processor.py', reloading
+2025-05-19 17:23:55,648 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/__init__.py', reloading
+2025-05-19 17:23:55,648 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/app.py', reloading
+2025-05-19 17:23:55,652 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/main.py', reloading
+2025-05-19 17:23:55,653 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/__init__.py', reloading
+2025-05-19 17:23:55,658 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/run_web_portal.py', reloading
+2025-05-19 17:23:55,661 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/knowledge_graph/__init__.py', reloading
+2025-05-19 17:23:55,662 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/form_processor/form_extractor.py', reloading
+2025-05-19 17:23:55,662 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/analysis_agent.py', reloading
+2025-05-19 17:23:55,663 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/app.py', reloading
+2025-05-19 17:23:55,667 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/run_web_portal.py', reloading
+2025-05-19 17:23:55,667 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/__init__.py', reloading
+2025-05-19 17:23:55,668 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/main.py', reloading
+2025-05-19 17:23:55,671 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/test_analysis.py', reloading
+2025-05-19 17:23:55,685 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/test_analysis.py', reloading
+2025-05-19 17:23:55,956 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 17:23:56,133 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 17:23:56,141 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 17:43:27,266 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 17:43:27,267 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 17:43:27,274 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 17:43:27,376 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 17:43:27,384 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 17:43:53,358 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:43:53] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-05-19 17:43:53,592 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:43:53] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-19 17:43:53,592 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:43:53] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-19 17:43:53,676 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:43:53] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-19 17:43:53,722 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:43:53] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-19 17:45:08,055 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 17:45:08,055 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 17:45:08,062 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 17:45:08,168 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 17:45:08,178 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 17:45:10,566 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:45:10] "GET / HTTP/1.1" 200 -
+2025-05-19 17:45:10,593 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:45:10] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-19 17:45:10,595 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:45:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-19 17:45:12,262 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:45:12] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 17:45:12,276 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:45:12] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 17:45:12,276 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:45:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 17:45:17,111 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:45:17] "GET / HTTP/1.1" 200 -
+2025-05-19 17:45:23,643 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:45:23] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 17:51:54,762 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:51:54] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 17:57:03,288 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:57:03] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 17:57:58,433 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 17:57:58,433 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 17:57:58,441 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 17:57:58,542 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 17:57:58,552 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 17:58:01,486 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:58:01] "GET / HTTP/1.1" 200 -
+2025-05-19 17:58:04,406 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:58:04] "GET / HTTP/1.1" 200 -
+2025-05-19 17:58:04,444 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:58:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 17:58:04,445 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:58:04] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 17:58:05,701 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:58:05] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 17:58:05,714 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:58:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 17:58:05,715 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:58:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 17:58:07,944 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 17:58:07] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 18:00:43,432 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:00:43] "GET / HTTP/1.1" 200 -
+2025-05-19 18:00:43,449 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:00:43] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 18:00:43,449 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:00:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:01:11,515 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:01:11] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 18:01:11,530 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:01:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:01:11,534 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:01:11] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 18:01:15,585 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:01:15] "GET /audits HTTP/1.1" 200 -
+2025-05-19 18:01:15,593 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:01:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:01:15,593 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:01:15] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 18:01:26,347 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:01:26] "GET / HTTP/1.1" 200 -
+2025-05-19 18:01:26,365 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:01:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:01:26,368 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:01:26] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 18:05:56,560 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 18:05:56,560 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 18:05:56,568 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 18:05:56,667 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 18:05:56,676 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 18:06:10,334 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:06:10] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 18:06:10,394 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:06:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:06:10,394 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:06:10] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 18:06:19,019 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:06:19] "GET / HTTP/1.1" 200 -
+2025-05-19 18:06:19,040 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:06:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:06:19,043 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:06:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 18:07:19,482 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:07:19] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 18:07:19,518 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:07:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:07:19,519 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:07:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 18:09:45,586 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:09:45] "GET / HTTP/1.1" 200 -
+2025-05-19 18:09:45,619 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:09:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:09:45,638 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:09:45] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 18:09:47,751 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:09:47] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 18:09:47,767 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:09:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:09:47,768 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:09:47] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 18:27:03,130 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 18:27:03,131 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 18:27:03,139 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 18:27:03,242 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 18:27:03,251 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 18:27:05,983 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:27:05] "GET / HTTP/1.1" 200 -
+2025-05-19 18:27:06,090 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:27:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:27:06,091 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:27:06] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 18:27:07,827 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:27:07] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 18:27:07,844 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:27:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 18:27:07,845 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 18:27:07] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 19:17:30,981 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:17:30] "GET / HTTP/1.1" 200 -
+2025-05-19 19:17:31,022 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:17:31] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 19:17:31,022 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:17:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 19:17:37,241 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:17:37] "GET /audits HTTP/1.1" 200 -
+2025-05-19 19:17:37,252 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:17:37] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 19:17:37,252 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:17:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 19:17:40,552 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:17:40] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 19:17:40,564 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:17:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 19:17:40,564 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:17:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 19:19:47,220 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-19 19:19:47,221 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 19:19:47,230 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 19:20:06,782 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:20:06] "GET / HTTP/1.1" 200 -
+2025-05-19 19:20:06,811 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:20:06] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-19 19:20:06,811 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:20:06] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-19 19:20:06,874 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:20:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-19 19:20:08,509 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:20:08] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 19:20:08,522 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:20:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 19:20:08,523 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:20:08] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 19:27:17,912 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 19:27:17,912 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 19:27:18,036 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 19:27:18,890 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 19:27:19,039 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 19:27:19,051 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 19:27:27,415 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-19 19:27:27,415 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 19:27:27,420 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 19:27:49,205 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:27:49] "GET / HTTP/1.1" 200 -
+2025-05-19 19:27:49,259 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:27:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 19:27:49,259 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:27:49] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-19 19:27:50,819 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:27:50] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 19:27:50,833 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:27:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 19:27:50,834 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:27:50] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 19:27:55,187 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:27:55] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:27:56,549 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:27:56] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:27:56,835 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:27:56] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:27:57,002 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:27:57] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:28:03,532 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:28:03] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:28:06,548 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:28:06] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:28:06,752 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:28:06] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:28:34,130 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:28:34] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:28:35,604 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:28:35] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:28:35,865 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:28:35] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:28:36,066 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:28:36] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:28:36,267 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:28:36] "[31m[1mPOST /api/analyze HTTP/1.1[0m" 400 -
+2025-05-19 19:30:25,796 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-19 19:30:25,797 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 19:30:25,805 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 19:30:43,867 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:43] "GET / HTTP/1.1" 200 -
+2025-05-19 19:30:43,927 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 19:30:43,927 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:43] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-19 19:30:44,928 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:44] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 19:30:44,939 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 19:30:44,940 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:44] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 19:30:49,004 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:30:49,004 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:30:49,005 - cqi9_system.web_portal.app - ERROR - Exception on /api/analyze [POST]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 159, in analyze_requirement
+    return analyze_section_1_1(requirement_id, requirement, evidence, deepseek_api_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 169, in analyze_section_1_1
+    prompt = f"""
+             ^^^^
+ValueError: Invalid format specifier ' true/false,
+  "explanation": "Your detailed analysis explaining why the evidence is either satisfactory or not satisfactory",
+  "confidence": 0.0 to 1.0 (your confidence in this assessment)
+' for object of type 'str'
+2025-05-19 19:30:49,009 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:49] "[35m[1mPOST /api/analyze HTTP/1.1[0m" 500 -
+2025-05-19 19:30:50,501 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:30:50,501 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:30:50,501 - cqi9_system.web_portal.app - ERROR - Exception on /api/analyze [POST]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 159, in analyze_requirement
+    return analyze_section_1_1(requirement_id, requirement, evidence, deepseek_api_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 169, in analyze_section_1_1
+    prompt = f"""
+             ^^^^
+ValueError: Invalid format specifier ' true/false,
+  "explanation": "Your detailed analysis explaining why the evidence is either satisfactory or not satisfactory",
+  "confidence": 0.0 to 1.0 (your confidence in this assessment)
+' for object of type 'str'
+2025-05-19 19:30:50,503 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:50] "[35m[1mPOST /api/analyze HTTP/1.1[0m" 500 -
+2025-05-19 19:30:50,682 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:30:50,682 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:30:50,683 - cqi9_system.web_portal.app - ERROR - Exception on /api/analyze [POST]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 159, in analyze_requirement
+    return analyze_section_1_1(requirement_id, requirement, evidence, deepseek_api_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 169, in analyze_section_1_1
+    prompt = f"""
+             ^^^^
+ValueError: Invalid format specifier ' true/false,
+  "explanation": "Your detailed analysis explaining why the evidence is either satisfactory or not satisfactory",
+  "confidence": 0.0 to 1.0 (your confidence in this assessment)
+' for object of type 'str'
+2025-05-19 19:30:50,684 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:50] "[35m[1mPOST /api/analyze HTTP/1.1[0m" 500 -
+2025-05-19 19:30:50,850 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:30:50,851 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:30:50,851 - cqi9_system.web_portal.app - ERROR - Exception on /api/analyze [POST]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 159, in analyze_requirement
+    return analyze_section_1_1(requirement_id, requirement, evidence, deepseek_api_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 169, in analyze_section_1_1
+    prompt = f"""
+             ^^^^
+ValueError: Invalid format specifier ' true/false,
+  "explanation": "Your detailed analysis explaining why the evidence is either satisfactory or not satisfactory",
+  "confidence": 0.0 to 1.0 (your confidence in this assessment)
+' for object of type 'str'
+2025-05-19 19:30:50,852 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:50] "[35m[1mPOST /api/analyze HTTP/1.1[0m" 500 -
+2025-05-19 19:30:51,033 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:30:51,033 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:30:51,033 - cqi9_system.web_portal.app - ERROR - Exception on /api/analyze [POST]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 159, in analyze_requirement
+    return analyze_section_1_1(requirement_id, requirement, evidence, deepseek_api_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 169, in analyze_section_1_1
+    prompt = f"""
+             ^^^^
+ValueError: Invalid format specifier ' true/false,
+  "explanation": "Your detailed analysis explaining why the evidence is either satisfactory or not satisfactory",
+  "confidence": 0.0 to 1.0 (your confidence in this assessment)
+' for object of type 'str'
+2025-05-19 19:30:51,034 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:51] "[35m[1mPOST /api/analyze HTTP/1.1[0m" 500 -
+2025-05-19 19:30:51,234 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:30:51,234 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:30:51,235 - cqi9_system.web_portal.app - ERROR - Exception on /api/analyze [POST]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 159, in analyze_requirement
+    return analyze_section_1_1(requirement_id, requirement, evidence, deepseek_api_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 169, in analyze_section_1_1
+    prompt = f"""
+             ^^^^
+ValueError: Invalid format specifier ' true/false,
+  "explanation": "Your detailed analysis explaining why the evidence is either satisfactory or not satisfactory",
+  "confidence": 0.0 to 1.0 (your confidence in this assessment)
+' for object of type 'str'
+2025-05-19 19:30:51,237 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:30:51] "[35m[1mPOST /api/analyze HTTP/1.1[0m" 500 -
+2025-05-19 19:31:28,234 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:31:28,236 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:31:28,236 - cqi9_system.web_portal.app - ERROR - Exception on /api/analyze [POST]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 159, in analyze_requirement
+    return analyze_section_1_1(requirement_id, requirement, evidence, deepseek_api_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 169, in analyze_section_1_1
+    prompt = f"""
+             ^^^^
+ValueError: Invalid format specifier ' true/false,
+  "explanation": "Your detailed analysis explaining why the evidence is either satisfactory or not satisfactory",
+  "confidence": 0.0 to 1.0 (your confidence in this assessment)
+' for object of type 'str'
+2025-05-19 19:31:28,238 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:31:28] "[35m[1mPOST /api/analyze HTTP/1.1[0m" 500 -
+2025-05-19 19:31:29,682 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:31:29,682 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:31:29,682 - cqi9_system.web_portal.app - ERROR - Exception on /api/analyze [POST]
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 159, in analyze_requirement
+    return analyze_section_1_1(requirement_id, requirement, evidence, deepseek_api_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py", line 169, in analyze_section_1_1
+    prompt = f"""
+             ^^^^
+ValueError: Invalid format specifier ' true/false,
+  "explanation": "Your detailed analysis explaining why the evidence is either satisfactory or not satisfactory",
+  "confidence": 0.0 to 1.0 (your confidence in this assessment)
+' for object of type 'str'
+2025-05-19 19:31:29,684 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:31:29] "[35m[1mPOST /api/analyze HTTP/1.1[0m" 500 -
+2025-05-19 19:32:11,743 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 19:32:11,744 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 19:32:12,683 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 19:32:12,759 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 19:32:12,938 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 19:32:12,948 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 19:32:16,381 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 19:32:16,381 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 19:32:16,393 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 19:32:16,393 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 19:32:17,027 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 19:32:17,075 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 19:32:17,178 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 19:32:17,185 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 19:32:31,432 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-19 19:32:31,432 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 19:32:31,438 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 19:32:40,350 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:32:40] "GET / HTTP/1.1" 200 -
+2025-05-19 19:32:40,414 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:32:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 19:32:40,414 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:32:40] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 19:32:41,590 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:32:41] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 19:32:41,599 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:32:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 19:32:41,602 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:32:41] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 19:32:45,567 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:32:45,567 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:32:47,317 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:32:47,317 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:32:47,565 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:32:47,565 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:32:47,766 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:32:47,766 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:32:53,410 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:32:53] "POST /api/analyze HTTP/1.1" 200 -
+2025-05-19 19:32:56,122 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:32:56] "POST /api/analyze HTTP/1.1" 200 -
+2025-05-19 19:32:56,256 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:32:56] "POST /api/analyze HTTP/1.1" 200 -
+2025-05-19 19:32:56,932 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:32:56,933 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:32:58,728 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:32:58] "POST /api/analyze HTTP/1.1" 200 -
+2025-05-19 19:33:05,263 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:33:05] "POST /api/analyze HTTP/1.1" 200 -
+2025-05-19 19:34:10,890 - cqi9_system.web_portal.app - INFO - Analyzing requirement 1.1.1: The heat treater shall ensure the availability of ...
+2025-05-19 19:34:10,890 - cqi9_system.web_portal.app - INFO - Evidence: yes...
+2025-05-19 19:34:19,978 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 19:34:19] "POST /api/analyze HTTP/1.1" 200 -
+2025-05-19 21:09:50,175 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 21:09:50,175 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 21:09:50,182 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:09:50,335 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:09:50,343 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:09:53,732 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:09:53] "GET / HTTP/1.1" 200 -
+2025-05-19 21:09:53,834 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:09:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:09:53,835 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:09:53] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-19 21:09:54,000 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:09:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-19 21:09:55,213 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:09:55] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 21:09:55,221 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:09:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:09:55,222 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:09:55] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:12:29,660 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/analysis_agent.py', reloading
+2025-05-19 21:12:29,865 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/analysis_agent.py', reloading
+2025-05-19 21:12:30,131 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:12:30,357 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:12:30,370 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:13:13,622 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 21:13:13,623 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 21:13:13,631 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:13:13,775 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:13:13,784 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:13:16,560 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:13:16] "GET / HTTP/1.1" 200 -
+2025-05-19 21:13:16,579 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:13:16] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:13:16,582 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:13:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:13:18,285 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:13:18] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 21:13:18,301 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:13:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:13:18,307 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:13:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:15:19,650 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:15:19] "GET / HTTP/1.1" 200 -
+2025-05-19 21:15:19,666 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:15:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:15:19,667 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:15:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:15:35,774 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:15:35] "GET /audits HTTP/1.1" 200 -
+2025-05-19 21:15:35,788 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:15:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:15:35,788 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:15:35] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:15:51,765 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/app.py', reloading
+2025-05-19 21:15:52,091 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/api/app.py', reloading
+2025-05-19 21:15:52,546 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:15:52,795 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:15:52,806 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:16:36,986 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/ai_engine/analysis_agent.py', reloading
+2025-05-19 21:16:37,087 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:16:37,446 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:16:37,455 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:16:58,501 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 21:16:58,501 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 21:16:58,508 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:16:58,652 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:16:58,665 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:17:01,042 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:17:01] "GET / HTTP/1.1" 200 -
+2025-05-19 21:17:01,110 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:17:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:17:01,110 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:17:01] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:17:02,281 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:17:02] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 21:17:02,292 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:17:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:17:02,293 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:17:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:20:43,951 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 21:20:43,956 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 21:20:44,191 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 21:20:44,589 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:20:44,823 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:20:44,833 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:21:03,234 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 21:21:03,235 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 21:21:03,241 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:21:03,393 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:21:03,402 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:21:05,943 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:21:05] "GET / HTTP/1.1" 200 -
+2025-05-19 21:21:05,980 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:21:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:21:05,981 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:21:05] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:21:07,246 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:21:07] "[35m[1mGET /audit/new HTTP/1.1[0m" 500 -
+2025-05-19 21:21:07,277 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:21:07] "GET /audit/new?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-19 21:21:07,278 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:21:07] "GET /audit/new?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-19 21:21:07,308 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:21:07] "GET /audit/new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-05-19 21:21:07,326 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:21:07] "[36mGET /audit/new?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-05-19 21:21:59,205 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 21:21:59,205 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 21:21:59,214 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:21:59,359 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:21:59,370 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:22:01,590 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:22:01] "GET / HTTP/1.1" 200 -
+2025-05-19 21:22:02,058 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:22:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:22:02,058 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:22:02] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:22:03,874 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:22:03] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 21:22:03,886 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:22:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:22:03,887 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:22:03] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:25:15,617 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 21:25:15,617 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 21:25:15,626 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:25:15,769 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:25:15,779 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:25:18,442 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:25:18] "GET / HTTP/1.1" 200 -
+2025-05-19 21:25:18,539 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:25:18] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:25:18,540 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:25:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:25:19,837 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:25:19] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 21:25:19,851 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:25:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:25:19,852 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:25:19] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:30:36,894 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 21:30:36,899 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 21:30:37,227 - werkzeug - INFO -  * Detected change in '/Users/srinivasand/Desktop/CQI-09/cqi9_system/web_portal/app.py', reloading
+2025-05-19 21:30:37,395 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:30:37,671 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:30:37,685 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:31:15,811 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5555
+ * Running on http://192.168.1.6:5555
+2025-05-19 21:31:15,811 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-19 21:31:15,819 - werkzeug - INFO -  * Restarting with watchdog (fsevents)
+2025-05-19 21:31:15,962 - werkzeug - WARNING -  * Debugger is active!
+2025-05-19 21:31:15,970 - werkzeug - INFO -  * Debugger PIN: 106-146-276
+2025-05-19 21:31:30,845 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:31:30] "GET / HTTP/1.1" 200 -
+2025-05-19 21:31:30,891 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:31:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:31:30,891 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:31:30] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:31:32,837 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:31:32] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 21:31:32,849 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:31:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:31:32,849 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:31:32] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -
+2025-05-19 21:32:19,793 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:32:19] "GET /?ide_webview_request_time=1747670539721 HTTP/1.1" 200 -
+2025-05-19 21:32:20,027 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:32:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-05-19 21:32:20,027 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:32:20] "GET /static/js/main.js HTTP/1.1" 200 -
+2025-05-19 21:32:22,491 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:32:22] "GET /audit/new HTTP/1.1" 200 -
+2025-05-19 21:32:22,499 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:32:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-05-19 21:32:22,499 - werkzeug - INFO - 127.0.0.1 - - [19/May/2025 21:32:22] "[36mGET /static/js/main.js HTTP/1.1[0m" 304 -

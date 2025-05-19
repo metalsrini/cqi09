@@ -1,0 +1,167 @@
+/* 
+ * CQI-9 Compliance Analysis System - Custom CSS 
+ */
+
+/* Global Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--dark-color);
+    background-color: #f5f7fa;
+}
+
+.navbar-brand i {
+    color: var(--warning-color);
+}
+
+/* Card Styling */
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Custom Shadows */
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+/* Dashboard Cards */
+.stat-card {
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.stat-card .card-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Compliance Indicators */
+.compliance-indicator {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.compliance-indicator.compliant {
+    background-color: var(--success-color);
+}
+
+.compliance-indicator.partial {
+    background-color: var(--warning-color);
+}
+
+.compliance-indicator.non-compliant {
+    background-color: var(--danger-color);
+}
+
+/* Audit Page Styling */
+.tab-content {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-top: 0;
+    padding: 1.5rem;
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.requirement-row {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.requirement-row:last-child {
+    border-bottom: none;
+}
+
+.requirement-text {
+    font-weight: 500;
+}
+
+.requirement-description {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.evidence-textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.analysis-result {
+    border-left: 4px solid #dee2e6;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.analysis-result.compliant {
+    border-left-color: var(--success-color);
+}
+
+.analysis-result.non-compliant {
+    border-left-color: var(--danger-color);
+}
+
+.analysis-result.partial {
+    border-left-color: var(--warning-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .nav-tabs .nav-link {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    h1.display-5 {
+        font-size: 2rem;
+    }
+} 

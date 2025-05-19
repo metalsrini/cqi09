@@ -1,0 +1,101 @@
+[
+  {
+    "id": "TABLE-3.1",
+    "name": "Temperature Uniformity Tolerances",
+    "description": "Maximum allowed temperature variations for different temperature ranges and processes",
+    "section": "3.1",
+    "parameters": ["Temperature Range", "Class 1", "Class 2", "Class 3", "Class 4", "Class 5"],
+    "units": {
+      "Temperature Range": "°C",
+      "Class 1": "°C",
+      "Class 2": "°C",
+      "Class 3": "°C",
+      "Class 4": "°C",
+      "Class 5": "°C"
+    },
+    "limits": {
+      "row1": {
+        "Temperature Range": "< 760",
+        "Class 1": "±3",
+        "Class 2": "±5",
+        "Class 3": "±8",
+        "Class 4": "±10",
+        "Class 5": "±14"
+      },
+      "row2": {
+        "Temperature Range": "760 to 980",
+        "Class 1": "±4",
+        "Class 2": "±6",
+        "Class 3": "±10",
+        "Class 4": "±14",
+        "Class 5": "±19"
+      },
+      "row3": {
+        "Temperature Range": "> 980",
+        "Class 1": "±5",
+        "Class 2": "±8",
+        "Class 3": "±14",
+        "Class 4": "±19",
+        "Class 5": "±28"
+      }
+    }
+  },
+  {
+    "id": "TABLE-3.2",
+    "name": "System Accuracy Test Tolerances",
+    "description": "Maximum allowed deviations for system accuracy tests",
+    "section": "3.2",
+    "parameters": ["Temperature Range", "Tolerance"],
+    "units": {
+      "Temperature Range": "°C",
+      "Tolerance": "°C"
+    },
+    "limits": {
+      "row1": {
+        "Temperature Range": "< 400",
+        "Tolerance": "±2.0"
+      },
+      "row2": {
+        "Temperature Range": "400 to 1000",
+        "Tolerance": "±3.0"
+      },
+      "row3": {
+        "Temperature Range": "> 1000",
+        "Tolerance": "±4.0"
+      }
+    }
+  },
+  {
+    "id": "TABLE-3.3",
+    "name": "Thermocouple Calibration Tolerance",
+    "description": "Allowable tolerance for thermocouple calibration",
+    "section": "3.3",
+    "parameters": ["Thermocouple Type", "Temperature Range", "Tolerance"],
+    "units": {
+      "Temperature Range": "°C",
+      "Tolerance": "°C"
+    },
+    "limits": {
+      "row1": {
+        "Thermocouple Type": "Type K",
+        "Temperature Range": "< 500",
+        "Tolerance": "±1.1 or ±0.4%"
+      },
+      "row2": {
+        "Thermocouple Type": "Type K",
+        "Temperature Range": "> 500",
+        "Tolerance": "±0.4%"
+      },
+      "row3": {
+        "Thermocouple Type": "Type N",
+        "Temperature Range": "< 500",
+        "Tolerance": "±1.1 or ±0.4%"
+      },
+      "row4": {
+        "Thermocouple Type": "Type N",
+        "Temperature Range": "> 500",
+        "Tolerance": "±0.4%"
+      }
+    }
+  }
+] 

@@ -1,0 +1,74 @@
+[
+  {
+    "source_id": "REQ-3.1.1-1",
+    "target_id": "REQ-3.1.1-2",
+    "type": "DEPENDS_ON",
+    "properties": {
+      "description": "Overall requirement depends on specific survey temperature requirements"
+    }
+  },
+  {
+    "source_id": "REQ-3.1.1-1",
+    "target_id": "REQ-3.1.1-3",
+    "type": "DEPENDS_ON",
+    "properties": {
+      "description": "Overall requirement depends on thermocouple placement requirements"
+    }
+  },
+  {
+    "source_id": "REQ-3.1.1-3",
+    "target_id": "REQ-3.3-1",
+    "type": "DEPENDS_ON",
+    "properties": {
+      "description": "Thermocouple placement depends on proper thermocouple calibration"
+    }
+  },
+  {
+    "source_id": "REQ-3.1.2-1",
+    "target_id": "REQ-3.1.1-1",
+    "type": "DEPENDS_ON",
+    "properties": {
+      "description": "Initial survey requirement depends on general survey requirements"
+    }
+  },
+  {
+    "source_id": "REQ-3.1.2-2",
+    "target_id": "REQ-3.1.1-1",
+    "type": "DEPENDS_ON",
+    "properties": {
+      "description": "Periodic survey requirement depends on general survey requirements"
+    }
+  },
+  {
+    "source_id": "REQ-3.2.1-1",
+    "target_id": "REQ-3.2.1-2",
+    "type": "DEPENDS_ON",
+    "properties": {
+      "description": "SAT frequency requirement depends on SAT methodology requirement"
+    }
+  },
+  {
+    "source_id": "REQ-3.2.1-2",
+    "target_id": "REQ-4.1-1",
+    "type": "DEPENDS_ON",
+    "properties": {
+      "description": "SAT methodology depends on proper equipment calibration"
+    }
+  },
+  {
+    "source_id": "REQ-3.3-1",
+    "target_id": "REQ-4.1-1",
+    "type": "CLARIFIES",
+    "properties": {
+      "description": "Thermocouple calibration requirement clarifies general equipment calibration requirement"
+    }
+  },
+  {
+    "source_id": "REQ-3.1.1-2",
+    "target_id": "REQ-3.4-1",
+    "type": "CLARIFIES",
+    "properties": {
+      "description": "Survey temperature requirement clarifies process parameter requirements"
+    }
+  }
+] 

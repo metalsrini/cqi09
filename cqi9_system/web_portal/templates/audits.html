@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+            <h1 class="h2">CQI-9 Audits</h1>
+            <a href="{{ url_for('new_audit') }}" class="btn btn-primary">
+                <i class="fas fa-plus me-2"></i>New Audit
+            </a>
+        </div>
+    </div>
+    
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search audits...">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ms-auto">
+                            <select class="form-select">
+                                <option selected>Filter by status</option>
+                                <option value="1">Compliant</option>
+                                <option value="2">Partial</option>
+                                <option value="3">Non-compliant</option>
+                                <option value="4">In Progress</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Supplier</th>
+                                    <th>Audit Date</th>
+                                    <th>Auditor</th>
+                                    <th>Status</th>
+                                    <th>Score</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% if audits %}
+                                    {% for audit in audits %}
+                                        <tr>
+                                            <td>{{ audit.supplier }}</td>
+                                            <td>{{ audit.date }}</td>
+                                            <td>{{ audit.auditor }}</td>
+                                            <td>
+                                                {% if audit.status == 'Compliant' %}
+                                                    <span class="badge bg-success">Compliant</span>
+                                                {% elif audit.status == 'Partial' %}
+                                                    <span class="badge bg-warning">Partial</span>
+                                                {% elif audit.status == 'Non-compliant' %}
+                                                    <span class="badge bg-danger">Non-compliant</span>
+                                                {% else %}
+                                                    <span class="badge bg-info">{{ audit.status }}</span>
+                                                {% endif %}
+                                            </td>
+                                            <td>{{ audit.score if audit.score else 'N/A' }}</td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <a href="{{ url_for('view_audit', audit_id=audit.id) }}" class="btn btn-sm btn-outline-primary">
+                                                        <i class="fas fa-eye"></i>
+                                                    </a>
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                        <i class="fas fa-download"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-sm btn-outline-danger">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                {% else %}
+                                    <tr>
+                                        <td colspan="6" class="text-center py-4">
+                                            <div class="text-muted">
+                                                <i class="fas fa-folder-open fa-3x mb-3"></i>
+                                                <p>No audits found. Click "New Audit" to create one.</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {% endif %}
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <nav aria-label="Audit pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

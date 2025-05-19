@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "file_path": "sample_sat.pdf",
+  "form_type": "system_accuracy_test",
+  "extracted_data": {
+    "equipment_info": {
+      "equipment_id": "F12345",
+      "manufacturer": "Thermal Solutions Inc",
+      "instrument_id": "CTRL-78901"
+    },
+    "test_info": {
+      "test_date": "05/16/2023",
+      "test_number": "SAT-2023-15",
+      "accuracy_tolerance": "±3.0"
+    },
+    "measurements": [
+      {
+        "standard": 400.0,
+        "measured": 401.2,
+        "deviation": 1.2
+      },
+      {
+        "standard": 650.0,
+        "measured": 651.8,
+        "deviation": 1.8
+      },
+      {
+        "standard": 900.0,
+        "measured": 902.5,
+        "deviation": 2.5
+      }
+    ],
+    "conformance": "pass"
+  },
+  "raw_document_data": {
+    "success": true,
+    "metadata": {
+      "title": "System Accuracy Test Report",
+      "author": "Quality Department",
+      "page_count": 2
+    }
+  }
+} 

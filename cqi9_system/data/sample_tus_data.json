@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "file_path": "sample_tus.pdf",
+  "form_type": "temperature_uniformity_survey",
+  "extracted_data": {
+    "equipment_info": {
+      "furnace_id": "F12345",
+      "manufacturer": "Thermal Solutions Inc",
+      "model": "HT-2000",
+      "serial_number": "TS-9876543"
+    },
+    "test_info": {
+      "test_date": "05/15/2023",
+      "test_number": "TUS-2023-42",
+      "setpoint": "850",
+      "uniformity_tolerance": "±8"
+    },
+    "temperature_readings": [
+      {"position": "TC1 - Front Left", "temperature": 848.2},
+      {"position": "TC2 - Front Center", "temperature": 849.5},
+      {"position": "TC3 - Front Right", "temperature": 850.8},
+      {"position": "TC4 - Middle Left", "temperature": 847.9},
+      {"position": "TC5 - Middle Center", "temperature": 851.2},
+      {"position": "TC6 - Middle Right", "temperature": 852.3},
+      {"position": "TC7 - Rear Left", "temperature": 846.7},
+      {"position": "TC8 - Rear Center", "temperature": 848.9},
+      {"position": "TC9 - Rear Right", "temperature": 853.1}
+    ],
+    "conformance": "pass"
+  },
+  "raw_document_data": {
+    "success": true,
+    "metadata": {
+      "title": "Temperature Uniformity Survey Report",
+      "author": "Quality Department",
+      "page_count": 3
+    }
+  }
+} 
