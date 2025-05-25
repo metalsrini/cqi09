@@ -1,6 +1,5 @@
 # Knowledge Graph Requirements
-neo4j==5.12.0  # Graph database
-py2neo==2021.2.3  # Neo4j Python driver
+py2neo==2021.2.4  # Neo4j Python driver
 networkx==3.1  # Graph manipulation
 
 # AI and ML Requirements
