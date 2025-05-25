@@ -37,6 +37,9 @@
 
 {% block content %}
 <div class="container-fluid">
+    <!-- Hidden element to store audit data -->
+    <div id="audit-data" style="display: none;" data-audit="{% if audit_data %}{{ audit_data|tojson|safe }}{% else %}{}{% endif %}"></div>
+    
     <div class="row mb-4">
         <div class="col-12 d-flex justify-content-between align-items-center">
             <h1 class="h2">CQI-9 Audit</h1>
@@ -405,672 +408,211 @@
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>There shall be a dedicated and qualified full-time heat treat person on site.</td>
                                             <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_1_1" data-requirement-id="1.1.1" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_1_1">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_1" id="satisfactory_1_1_1" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_1_1">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_1" id="not_satisfactory_1_1_1" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_1_1">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_1" id="na_1_1_1" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_1_1">N/A</label>
-                                                    </div>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">There shall be a dedicated and qualified full-time heat treat person on site.</div>
+                                                    <div class="requirement-text">The position shall be reflected in the organization chart.</div>
+                                                    <div class="requirement-text">A job description shall exist identifying the qualifications for the positions including appropriate metallurgical and heat treat knowledge for the individuals.</div>
+                                                    <div class="requirement-text">Evidence shall be available regarding the qualifications with a minimum of 5 years experience in heat treat operations or as a combination of a minimum of 5 years of formal metallurgical education and heat treat experience.</div>
                                                 </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.1.1">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                            </td>
+                                            <td style="width: 40%">
+                                                <textarea class="form-control evidence-textarea" name="evidence_1_1" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td style="width: 15%">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <select class="form-select" name="rating_1_1">
+                                                        <option value="">Select...</option>
+                                                        <option value="satisfactory">Satisfactory</option>
+                                                        <option value="not_satisfactory">Not Satisfactory</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-section="1.1">
+                                                        <i class="fas fa-robot me-1"></i> Analyze
                                                     </button>
                                                 </div>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>The position shall be reflected in the organization chart.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_1_2" data-requirement-id="1.1.2" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_1_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_2" id="satisfactory_1_1_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_1_2">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_2" id="not_satisfactory_1_1_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_1_2">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_2" id="na_1_1_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_1_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.1.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>A job description shall exist identifying the qualifications including appropriate metallurgical and heat treat knowledge for the individuals.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_1_3" data-requirement-id="1.1.3" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_1_3">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_3" id="satisfactory_1_1_3" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_1_3">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_3" id="not_satisfactory_1_1_3" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_1_3">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_3" id="na_1_1_3" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_1_3">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.1.3">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>Evidence shall be available regarding the qualifications with a minimum of 5 years experience in heat treat operations or as a combination of a minimum of 5 years of formal metallurgical education and heat treat experience.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_1_4" data-requirement-id="1.1.4" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_1_4">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_4" id="satisfactory_1_1_4" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_1_4">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_4" id="not_satisfactory_1_1_4" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_1_4">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_1_4" id="na_1_1_4" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_1_4">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.1.4">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" class="small">Comments:</td>
                                         </tr>
                                         
                                         <!-- 1.2 Advanced Quality Planning -->
                                         <tr>
-                                            <td style="width: 5%">1.2</td>
+                                            <td>1.2</td>
                                             <td colspan="3" class="fw-bold">Does the heat treater perform advanced quality planning?</td>
                                         </tr>
                                         <tr>
                                             <td colspan="4" class="small text-muted">The organization shall incorporate a documented advance quality planning process. A structured system for such process with the APQP elements is recommended, samples are available in the AIAG APQP manual or other equivalent national automotive industry standards. Similar parts can be grouped into part families for this effort as defined by the organization.</td>
                                         </tr>
                                         <tr>
-                                            <th style="width: 5%"></th>
-                                            <th style="width: 40%">Requirements</th>
-                                            <th style="width: 30%">Objective Evidence</th>
-                                            <th style="width: 25%">Assessment</th>
-                                        </tr>
-                                        <tr>
                                             <td></td>
-                                            <td>The organization shall incorporate a documented advance quality planning process.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_2_1" data-requirement-id="1.2.1" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_2_1">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_1" id="satisfactory_1_2_1" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_2_1">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_1" id="not_satisfactory_1_2_1" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_2_1">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_1" id="na_1_2_1" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_2_1">N/A</label>
-                                                    </div>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">There shall be documented advance quality planning procedure available.</div>
+                                                    <div class="requirement-text">Feasibility studies shall be performed and internally approved for each part or group of similar parts.</div>
+                                                    <div class="requirement-text">There shall be a documented system for process changes with approval by the customer.</div>
                                                 </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.2.1">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_1_2" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column gap-2">
+                                                    <select class="form-select" name="rating_1_2">
+                                                        <option value="">Select...</option>
+                                                        <option value="satisfactory">Satisfactory</option>
+                                                        <option value="not_satisfactory">Not Satisfactory</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-section="1.2">
+                                                        <i class="fas fa-robot me-1"></i> Analyze
                                                     </button>
                                                 </div>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>A structured system with APQP elements is recommended.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_2_2" data-requirement-id="1.2.2" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_2_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_2" id="satisfactory_1_2_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_2_2">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_2" id="not_satisfactory_1_2_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_2_2">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_2" id="na_1_2_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_2_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.2.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>There shall be documented advance quality planning procedure available.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_2_3" data-requirement-id="1.2.3" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_2_3">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_3" id="satisfactory_1_2_3" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_2_3">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_3" id="not_satisfactory_1_2_3" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_2_3">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_3" id="na_1_2_3" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_2_3">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.2.3">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>Feasibility studies shall be performed and internally approved for each part or group of similar parts.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_2_4" data-requirement-id="1.2.4" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_2_4">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_4" id="satisfactory_1_2_4" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_2_4">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_4" id="not_satisfactory_1_2_4" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_2_4">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_4" id="na_1_2_4" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_2_4">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.2.4">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>There shall be a documented system for process changes with approval by the customer.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_2_5" data-requirement-id="1.2.5" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_2_5">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_5" id="satisfactory_1_2_5" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_2_5">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_5" id="not_satisfactory_1_2_5" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_2_5">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_2_5" id="na_1_2_5" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_2_5">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.2.5">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" class="small">Comments:</td>
                                         </tr>
                                         
                                         <!-- 1.3 Heat Treat FMEAs -->
                                         <tr>
-                                            <td style="width: 5%">1.3</td>
+                                            <td>1.3</td>
                                             <td colspan="3" class="fw-bold">Are heat treat FMEAs up to date and reflecting current processing?</td>
                                         </tr>
                                         <tr>
                                             <td colspan="4" class="small text-muted">Failure Mode and Effects Analysis (FMEA) for processes (PFMEA) is mandatory for the prevention of product/process failure modes and final product concerns. Examples of appropriate methods and standards include SAE J1739, AIAG & VDA FMEA Handbook.</td>
                                         </tr>
                                         <tr>
-                                            <th style="width: 5%"></th>
-                                            <th style="width: 40%">Requirements</th>
-                                            <th style="width: 30%">Objective Evidence</th>
-                                            <th style="width: 25%">Assessment</th>
-                                        </tr>
-                                        <tr>
                                             <td></td>
-                                            <td>There shall be a documented Failure Mode and Effects Analysis (FMEA) procedure with the present FMEAs updated and reflecting the current part quality status.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_3_1" data-requirement-id="1.3.1" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_3_1">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_1" id="satisfactory_1_3_1" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_3_1">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_1" id="not_satisfactory_1_3_1" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_3_1">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_1" id="na_1_3_1" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_3_1">N/A</label>
-                                                    </div>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">There shall be a documented Failure Mode and Effects Analysis (FMEA) procedure with the present FMEAs updated and reflecting the current part quality status.</div>
+                                                    <div class="requirement-text">FMEAs shall address all process steps from part receipt to part shipment and all the key heat treat process parameters as defined by the organization.</div>
+                                                    <div class="requirement-text">All special characteristics, as defined by the organization and its customers, shall be identified, defined, and addressed in the FMEA.</div>
+                                                    <div class="requirement-text">A cross-functional team shall be used in the development of the FMEA and shall be consistent with all associated documentation such as Control Plans, work instructions and shop travelers.</div>
                                                 </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.3.1">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_1_3" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column gap-2">
+                                                    <select class="form-select" name="rating_1_3">
+                                                        <option value="">Select...</option>
+                                                        <option value="satisfactory">Satisfactory</option>
+                                                        <option value="not_satisfactory">Not Satisfactory</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-section="1.3">
+                                                        <i class="fas fa-robot me-1"></i> Analyze
                                                     </button>
                                                 </div>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>FMEAs shall address all process steps from part receipt to part shipment and all the key heat treat process parameters as defined by the organization.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_3_2" data-requirement-id="1.3.2" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_3_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_2" id="satisfactory_1_3_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_3_2">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_2" id="not_satisfactory_1_3_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_3_2">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_2" id="na_1_3_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_3_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.3.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>All special characteristics, as defined by the organization and its customers, shall be identified, defined, and addressed in the FMEA.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_3_3" data-requirement-id="1.3.3" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_3_3">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_3" id="satisfactory_1_3_3" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_3_3">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_3" id="not_satisfactory_1_3_3" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_3_3">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_3" id="na_1_3_3" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_3_3">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.3.3">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>A cross-functional team shall be used in the development of the FMEA and shall be consistent with all associated documentation such as Control Plans, work instructions and shop travelers.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_3_4" data-requirement-id="1.3.4" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_3_4">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_4" id="satisfactory_1_3_4" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_3_4">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_4" id="not_satisfactory_1_3_4" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_3_4">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_3_4" id="na_1_3_4" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_3_4">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.3.4">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" class="small">Comments:</td>
                                         </tr>
                                         
                                         <!-- 1.4 Control Plans -->
                                         <tr>
-                                            <td style="width: 5%">1.4</td>
-                                            <td colspan="3" class="fw-bold">Does the organization use Control Plans for all heat treat processes?</td>
+                                            <td>1.4</td>
+                                            <td colspan="3" class="fw-bold">Are heat treat process control plans up to date and reflecting current processing?</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="4" class="small text-muted">The organization shall incorporate the use of a documented Control Plan reflecting the current process.</td>
-                                        </tr>
-                                        <tr>
-                                            <th style="width: 5%"></th>
-                                            <th style="width: 40%">Requirements</th>
-                                            <th style="width: 30%">Objective Evidence</th>
-                                            <th style="width: 25%">Assessment</th>
+                                            <td colspan="4" class="small text-muted">Reference automotive industry Control Plan guidelines. The Control Plan may be specific for each part or part family or it can be process specific and written for each process. In any case it describes required controls and actions for each process step as well as periodic requirements to assure process is in control.</td>
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>The organization shall incorporate the use of a documented Control Plan reflecting the current process.</td>
                                             <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_4_1" data-requirement-id="1.4.1" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_4_1">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_1" id="satisfactory_1_4_1" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_4_1">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_1" id="not_satisfactory_1_4_1" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_4_1">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_1" id="na_1_4_1" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_4_1">N/A</label>
-                                                    </div>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">The organization shall incorporate the use of a documented Control Plan reflecting the current process.</div>
+                                                    <div class="requirement-text">Control Plans shall address all process steps from part receipt to part shipment and identify all equipment used and all key heat treat process parameters as defined by the organization.</div>
+                                                    <div class="requirement-text">A cross-functional team shall be used in the development of the Control Plan and shall be consistent with all associated documentation such as FMEAs, work instructions and shop travelers.</div>
+                                                    <div class="requirement-text">All special characteristics as defined by the organization or its customers shall be identified, defined, and addressed in the applicable control plan.</div>
+                                                    <div class="requirement-text">Sample sizes and frequencies for evaluation of process and product characteristics shall be addressed and shall be consistent with the minimum requirements listed in the applicable Process Table.</div>
                                                 </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.4.1">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_1_4" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column gap-2">
+                                                    <select class="form-select" name="rating_1_4">
+                                                        <option value="">Select...</option>
+                                                        <option value="satisfactory">Satisfactory</option>
+                                                        <option value="not_satisfactory">Not Satisfactory</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-section="1.4">
+                                                        <i class="fas fa-robot me-1"></i> Analyze
                                                     </button>
                                                 </div>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>Control Plans shall address all process steps from part receipt to part shipment and identify all equipment used and all key heat treat process parameters as defined by the organization.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_4_2" data-requirement-id="1.4.2" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_4_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_2" id="satisfactory_1_4_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_4_2">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_2" id="not_satisfactory_1_4_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_4_2">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_2" id="na_1_4_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_4_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.4.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>A cross-functional team shall be used in the development of the Control Plan and shall be consistent with all associated documentation.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_4_3" data-requirement-id="1.4.3" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_4_3">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_3" id="satisfactory_1_4_3" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_4_3">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_3" id="not_satisfactory_1_4_3" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_4_3">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_3" id="na_1_4_3" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_4_3">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.4.3">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>All special characteristics shall be identified, defined, and addressed in the applicable control plan.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_4_4" data-requirement-id="1.4.4" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_4_4">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_4" id="satisfactory_1_4_4" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_4_4">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_4" id="not_satisfactory_1_4_4" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_4_4">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_4" id="na_1_4_4" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_4_4">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.4.4">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>Sample sizes and frequencies for evaluation shall be addressed and consistent with the minimum requirements listed in the applicable Process Table.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_4_5" data-requirement-id="1.4.5" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_4_5">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_5" id="satisfactory_1_4_5" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_4_5">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_5" id="not_satisfactory_1_4_5" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_4_5">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_4_5" id="na_1_4_5" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_4_5">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.4.5">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" class="small">Comments:</td>
                                         </tr>
                                         
                                         <!-- 1.5 Current Specifications -->
                                         <tr>
-                                            <td style="width: 5%">1.5</td>
+                                            <td>1.5</td>
                                             <td colspan="3" class="fw-bold">Are all heat treat related and referenced specifications current and available?</td>
                                         </tr>
                                         <tr>
                                             <td colspan="4" class="small text-muted">A document control system is pertinent for the handling and internal distribution of received customer specifications and to keep up to date with national or global standards related or close to heat treat processes.</td>
                                         </tr>
                                         <tr>
-                                            <th style="width: 5%"></th>
-                                            <th style="width: 40%">Requirements</th>
-                                            <th style="width: 30%">Objective Evidence</th>
-                                            <th style="width: 25%">Assessment</th>
-                                        </tr>
-                                        <tr>
                                             <td></td>
-                                            <td>The organization shall have a procedure and process to ensure the timely review, distribution and implementation of all customer and industry engineering standards/specifications and changes based on customer-required schedule.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_5_1" data-requirement-id="1.5.1" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_5_1">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_5_1" id="satisfactory_1_5_1" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_5_1">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_5_1" id="not_satisfactory_1_5_1" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_5_1">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_5_1" id="na_1_5_1" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_5_1">N/A</label>
-                                                    </div>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">The organization shall have a procedure and process to ensure the timely review, distribution and implementation of all customer and industry engineering standards/specifications and changes based on customer-required schedule.</div>
+                                                    <div class="requirement-text">The organization shall have all related heat treat and customer referenced standards and specifications available for use, like but not limited to SAE, AIAG, ASTM, ISO, EN, JIS, General Motors, Ford, and FCA.</div>
+                                                    <div class="requirement-text">The procedure shall include a 2-week distribution limit for cascading newly received and reviewed documents.</div>
                                                 </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.5.1">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_1_5" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column gap-2">
+                                                    <select class="form-select" name="rating_1_5">
+                                                        <option value="">Select...</option>
+                                                        <option value="satisfactory">Satisfactory</option>
+                                                        <option value="not_satisfactory">Not Satisfactory</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-section="1.5">
+                                                        <i class="fas fa-robot me-1"></i> Analyze
                                                     </button>
                                                 </div>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>The organization shall have all related heat treat and customer referenced standards and specifications available for use, like but not limited to SAE, AIAG, ASTM, ISO, EN, JIS, General Motors, Ford, and FCA.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_5_2" data-requirement-id="1.5.2" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_5_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_5_2" id="satisfactory_1_5_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_5_2">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_5_2" id="not_satisfactory_1_5_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_5_2">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_5_2" id="na_1_5_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_5_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.5.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>The procedure shall include a 2-week distribution limit for cascading newly received and reviewed documents.</td>
-                                            <td><textarea class="form-control evidence-textarea" name="evidence_1_5_3" data-requirement-id="1.5.3" rows="3"></textarea></td>
-                                            <td class="analysis-cell" id="analysis_1_5_3">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_5_3" id="satisfactory_1_5_3" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_5_3">Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_5_3" id="not_satisfactory_1_5_3" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_5_3">Not Satisfactory</label>
-                                                        <input type="radio" class="btn-check" name="assessment_1_5_3" id="na_1_5_3" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_5_3">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.5.3">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" class="small">Comments:</td>
                                         </tr>
                                         
-                                        <!-- 1.6 Quality System -->
+                                        <!-- 1.6 Process Specifications -->
                                         <tr>
-                                            <td style="width: 5%">1.6</td>
-                                            <td colspan="3" class="fw-bold">Does the organization have a quality system?</td>
+                                            <td>1.6</td>
+                                            <td colspan="3" class="fw-bold">Is there a documented system to create process specifications for all active processes?</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="4" class="small text-muted">The organization shall have a documented quality system.</td>
-                                        </tr>
-                                        <tr>
-                                            <th style="width: 5%"></th>
-                                            <th style="width: 40%">Requirements</th>
-                                            <th style="width: 30%">Objective Evidence</th>
-                                            <th style="width: 25%">Assessment</th>
+                                            <td colspan="4" class="small text-muted">A documented system for creating process specifications is necessary for operating the heat treat process within the desired, requested process parameters to reach the final product specifications.</td>
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>The organization shall have a documented quality system.</td>
                                             <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_6_1" data-requirement-id="1.6.1" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_6_1">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_6_1" id="satisfactory_1_6_1" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_6_1">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_6_1" id="not_satisfactory_1_6_1" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_6_1">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_6_1" id="na_1_6_1" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_6_1">N/A</label>
-                                                    </div>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Authorization shall be defined to a responsible person (see 1.1) for establishing process specification for the heat treatment of the products with the available equipment.</div>
+                                                    <div class="requirement-text">The heat treater shall have written process specifications for all active processes and identify all steps of the process including relevant process parameters.</div>
+                                                    <div class="requirement-text">Parameters shall have operating tolerances as defined by the organization in order to maintain process control.</div>
+                                                    <div class="requirement-text">Process specifications shall be available in the form of work instructions, job card, computer-based recipes, or other similar documents.</div>
+                                                    <div class="requirement-text">All process specification changes shall be reviewed to ensure continued conformity with customer requirements for process changes.</div>
+                                                    <div class="requirement-text">All process specification changes shall be documented to include the date the process specification change was implemented and the person(s) approving the change.</div>
                                                 </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.6.1">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_1_6" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex flex-column gap-2">
+                                                    <select class="form-select" name="rating_1_6">
+                                                        <option value="">Select...</option>
+                                                        <option value="satisfactory">Satisfactory</option>
+                                                        <option value="not_satisfactory">Not Satisfactory</option>
+                                                        <option value="na">N/A</option>
+                                                    </select>
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-section="1.6">
+                                                        <i class="fas fa-robot me-1"></i> Analyze
                                                     </button>
                                                 </div>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>The system shall be compliant with IATF 16949 or ISO 9001 requirements.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_6_2" data-requirement-id="1.6.2" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_6_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_6_2" id="satisfactory_1_6_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_6_2">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_6_2" id="not_satisfactory_1_6_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_6_2">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_6_2" id="na_1_6_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_6_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.6.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>Current certification to an appropriate standard shall be maintained.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_1_6_3" data-requirement-id="1.6.3" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_1_6_3">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_1_6_3" id="satisfactory_1_6_3" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_1_6_3">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_6_3" id="not_satisfactory_1_6_3" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_1_6_3">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_1_6_3" id="na_1_6_3" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_1_6_3">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="1.6.3">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" class="small">Comments:</td>
                                         </tr>
                                         
                                         <!-- 1.7 Internal Audits -->
@@ -2126,10 +1668,10 @@
                             </div>
                         </div>
                         
-                        <!-- Section 2 - Shop Floor Process Control Tab -->
+                        <!-- Section 2 - Floor and Material Handling Responsibility -->
                         <div class="tab-pane fade" id="section2" role="tabpanel" aria-labelledby="section2-tab">
                             <div class="d-flex justify-content-between mb-4">
-                                <h3 class="h4">Section 2 - Shop Floor Process Control</h3>
+                                <h3 class="h4">Section 2 - Floor and Material Handling Responsibility</h3>
                                 <button type="button" class="btn btn-sm btn-primary analyze-section-btn" data-section="section2">
                                     <i class="fas fa-robot me-1"></i> Analyze All
                                 </button>
@@ -2139,20 +1681,20 @@
                                 <table class="table table-bordered">
                                     <thead class="table-light">
                                         <tr>
-                                            <th colspan="4" class="text-center">Section 2 - Shop Floor Process Control</th>
+                                            <th colspan="4" class="text-center">Section 2 - Floor and Material Handling Responsibility</th>
                                         </tr>
                                         <tr>
                                             <th colspan="4" class="text-center">Please describe Objective Evidence for each Requirement</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <!-- 2.1 Process Controls -->
+                                        <!-- 2.1 Process Tracking System -->
                                         <tr>
                                             <td style="width: 5%">2.1</td>
-                                            <td colspan="3" class="fw-bold">Does the heat treat responsible organization ensure that customer data entered in the process tracking system matches the customer order?</td>
+                                            <td colspan="3" class="fw-bold">Is there a process tracking system in place to ensure parts are processed according to customer order?</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="4" class="small text-muted">It is critical that all customer requirements and lot identification be adequately transferred to internal heat treat documents. This also applies to captive heat treaters and their internal material flow.</td>
+                                            <td colspan="4" class="small text-muted">A process tracking system is essential to ensure proper processing and prevent mixing of lots.</td>
                                         </tr>
                                         <tr>
                                             <th style="width: 5%"></th>
@@ -2162,51 +1704,73 @@
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>The heat treater shall establish a documented product tracking system (e.g. shop travelers, work orders, etc.) which supports the heat treatment with relevant product and process information.</td>
                                             <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_2_1_1" data-requirement-id="2.1.1" rows="3"></textarea>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">A process tracking system shall be in place to ensure parts are processed according to customer order.</div>
+                                                    <div class="requirement-text">The system shall prevent mixing of lots and maintain proper segregation of materials.</div>
+                                                </div>
                                             </td>
-                                            <td class="analysis-cell" id="analysis_2_1_1">
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_1" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_1">
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_2_1_1" id="satisfactory_2_1_1" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_2_1_1">Satisfactory</label>
+                                                        <input type="radio" class="btn-check" name="assessment_2_1" id="satisfactory_2_1" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_1">Satisfactory</label>
                                                         
-                                                        <input type="radio" class="btn-check" name="assessment_2_1_1" id="not_satisfactory_2_1_1" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_1_1">Not Satisfactory</label>
+                                                        <input type="radio" class="btn-check" name="assessment_2_1" id="not_satisfactory_2_1" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_1">Not Satisfactory</label>
                                                         
-                                                        <input type="radio" class="btn-check" name="assessment_2_1_1" id="na_2_1_1" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_2_1_1">N/A</label>
+                                                        <input type="radio" class="btn-check" name="assessment_2_1" id="na_2_1" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_1">N/A</label>
                                                     </div>
                                                 </div>
                                                 <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.1.1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.1">
                                                         <i class="fas fa-brain me-1"></i> Analyze
                                                     </button>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+
+                                        <!-- 2.2 Product Identification -->
+                                        <tr>
+                                            <td style="width: 5%">2.2</td>
+                                            <td colspan="3" class="fw-bold">Is product identification maintained throughout all processes?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Proper product identification is crucial to prevent mixing of lots and maintain process control.</td>
+                                        </tr>
+                                        <tr>
                                             <td></td>
-                                            <td>The heat treat organization shall establish a system to detect and resolve discrepancies on received products and corresponding customer information.</td>
                                             <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_2_1_2" data-requirement-id="2.1.2" rows="3"></textarea>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Product identification shall be maintained throughout all processes.</div>
+                                                    <div class="requirement-text">Non-heat treated, in-process, and finished product shall be properly segregated in clearly identified locations.</div>
+                                                </div>
                                             </td>
-                                            <td class="analysis-cell" id="analysis_2_1_2">
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_2" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_2">
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_2_1_2" id="satisfactory_2_1_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_2_1_2">Satisfactory</label>
+                                                        <input type="radio" class="btn-check" name="assessment_2_2" id="satisfactory_2_2" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_2">Satisfactory</label>
                                                         
-                                                        <input type="radio" class="btn-check" name="assessment_2_1_2" id="not_satisfactory_2_1_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_1_2">Not Satisfactory</label>
+                                                        <input type="radio" class="btn-check" name="assessment_2_2" id="not_satisfactory_2_2" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_2">Not Satisfactory</label>
                                                         
-                                                        <input type="radio" class="btn-check" name="assessment_2_1_2" id="na_2_1_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_2_1_2">N/A</label>
+                                                        <input type="radio" class="btn-check" name="assessment_2_2" id="na_2_2" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_2">N/A</label>
                                                     </div>
                                                 </div>
                                                 <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.1.2">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.2">
                                                         <i class="fas fa-brain me-1"></i> Analyze
                                                     </button>
                                                 </div>
@@ -2216,13 +1780,274 @@
                                             <td colspan="4" class="small">Comments:</td>
                                         </tr>
                                         
-                                        <!-- 2.2 Product Identification -->
+                                        <!-- 2.3 Lot Traceability -->
                                         <tr>
-                                            <td style="width: 5%">2.2</td>
-                                            <td colspan="3" class="fw-bold">Does the organization monitor all process parameters?</td>
+                                            <td style="width: 5%">2.3</td>
+                                            <td colspan="3" class="fw-bold">Is lot traceability and integrity maintained throughout all processes?</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="4" class="small text-muted">The organization shall monitor all process parameters that affect heat treat quality.</td>
+                                            <td colspan="4" class="small text-muted">Maintaining lot traceability is essential for quality control and problem resolution.</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Lot traceability shall be maintained throughout the entire process.</div>
+                                                    <div class="requirement-text">The system shall ensure complete tracking from receipt through shipping.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_3" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_3">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_2_3" id="satisfactory_2_3" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_3">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_3" id="not_satisfactory_2_3" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_3">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_3" id="na_2_3" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_3">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.3">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+
+                                        <!-- 2.4 Non-conforming Product Control -->
+                                        <tr>
+                                            <td style="width: 5%">2.4</td>
+                                            <td colspan="3" class="fw-bold">Are procedures adequate to prevent movement of non-conforming product into the production system?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">The control of suspect or non-conforming product is necessary to prevent inadvertent shipment or contamination of other lots.</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Procedures shall exist addressing proper disposition, product identification, and tracking of material flow in and out of the hold area.</div>
+                                                    <div class="requirement-text">A non-conforming hold area shall be clearly designated to maintain segregation of such material.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_4" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_4">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_2_4" id="satisfactory_2_4" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_4">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_4" id="not_satisfactory_2_4" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_4">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_4" id="na_2_4" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_4">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.4">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+                                        
+                                        <!-- 2.5 Trap Points -->
+                                        <tr>
+                                            <td style="width: 5%">2.5</td>
+                                            <td colspan="3" class="fw-bold">Is there a system to identify trap points in the entire heat treat process to reduce risk of mixed parts?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Heat-treating furnaces and other processing equipment (including but not limited to baskets, conveyors, chutes, etc.) contain areas that have a risk of trapping or holding parts. Such trapping of parts can lead to damage, improperly processed parts or lot mixing/contamination.</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">The heat treater shall have procedures to identify and monitor trap points for each process/equipment.</div>
+                                                    <div class="requirement-text">Monitoring of potential trap points shall occur for every lot changeover.</div>
+                                                    <div class="requirement-text">Records of trap point inspections shall be maintained.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_5" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_5">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_2_5" id="satisfactory_2_5" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_5">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_5" id="not_satisfactory_2_5" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_5">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_5" id="na_2_5" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_5">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.5">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+
+                                        <!-- 2.6 Container Inspection -->
+                                        <tr>
+                                            <td style="width: 5%">2.6</td>
+                                            <td colspan="3" class="fw-bold">Are containers free of inappropriate material or free of heat treated parts mixed with non-heat treated parts?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Containers used for the transport of parts to be heat treated are often used for the same material after completion of the heat treat process. It is critical that the finished lot is not contaminated with non-heat treated parts or other inappropriate material remaining in the container.</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">There shall be a procedure that addresses the inspection of containers used for transporting non-heat treated and heat treated parts.</div>
+                                                    <div class="requirement-text">The procedure shall include the inspection of containers after emptying and immediately before re-using to ensure that all parts and inappropriate material have been removed.</div>
+                                                    <div class="requirement-text">The source of inappropriate material shall be identified and addressed.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_6" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_6">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_2_6" id="satisfactory_2_6" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_6">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_6" id="not_satisfactory_2_6" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_6">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_6" id="na_2_6" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_6">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.6">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+                                        
+                                        <!-- 2.7 Furnace Loading -->
+                                        <tr>
+                                            <td style="width: 5%">2.7</td>
+                                            <td colspan="3" class="fw-bold">Is furnace loading specified, documented and controlled?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Proper furnace loading is critical for achieving consistent heat treatment results.</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Furnace loading parameters shall be specified, documented, and controlled (including but not limited to the following examples: feed rate, belt speed, number of parts per fixture, load weight).</div>
+                                                    <div class="requirement-text">Loading procedures shall be available and followed by operators.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_7" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_7">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_2_7" id="satisfactory_2_7" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_7">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_7" id="not_satisfactory_2_7" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_7">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_7" id="na_2_7" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_7">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.7">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+
+                                        <!-- 2.8 Emergency Procedures -->
+                                        <tr>
+                                            <td style="width: 5%">2.8</td>
+                                            <td colspan="3" class="fw-bold">Is there a procedure for material handling, containment action, and product segregation in the event of an equipment emergency including power failure?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Unplanned or emergency downtime greatly increases the risk of improper processing.</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">There shall be a procedure for material handling, containment action, and product segregation in the event of an equipment emergency including power failure.</div>
+                                                    <div class="requirement-text">The procedure shall address containment actions related to all elements of the heat-treating process, e.g. loading, austenitizing, quenching, tempering.</div>
+                                                    <div class="requirement-text">The procedure shall define when this emergency plan is to be implemented.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_8" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_8">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_2_8" id="satisfactory_2_8" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_8">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_8" id="not_satisfactory_2_8" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_8">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_8" id="na_2_8" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_8">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.8">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+
+                                        <!-- 2.9 Handling, Storage and Packaging -->
+                                        <tr>
+                                            <td style="width: 5%">2.9</td>
+                                            <td colspan="3" class="fw-bold">Is the handling, storage and packaging adequate to preserve product quality?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Some equipment includes conveyors and other moving components that may not be able to handle all part configurations. Other practices such as stacking of overloaded containers can also increase the risk of part damage.</td>
                                         </tr>
                                         <tr>
                                             <th style="width: 5%"></th>
@@ -2232,10 +2057,239 @@
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>The organization shall monitor all process parameters that affect heat treat quality.</td>
                                             <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_2_2_1" data-requirement-id="2.2.1" rows="3"></textarea>
-                                            <td>The organization shall have a documented calibration program for all equipment used to verify heat treat quality.</td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Handling, storage, and packaging shall be adequate to preserve product quality.</div>
+                                                    <div class="requirement-text">The heat treater's furnace loading system, in-process handling, and shipping process shall be assessed for risk of part damage or other quality concerns.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_9" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_9">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_2_9" id="satisfactory_2_9" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_9">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_9" id="not_satisfactory_2_9" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_9">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_9" id="na_2_9" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_9">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.9">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+                                        
+                                        <!-- 2.10 Plant Cleanliness and Housekeeping -->
+                                        <tr>
+                                            <td style="width: 5%">2.10</td>
+                                            <td colspan="3" class="fw-bold">Are plant cleanliness, housekeeping, environmental, and working conditions conducive to control and improve quality?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Plant cleanliness and proper housekeeping are essential for maintaining quality standards in heat treatment operations.</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="width: 5%"></th>
+                                            <th style="width: 40%">Requirements</th>
+                                            <th style="width: 30%">Objective Evidence</th>
+                                            <th style="width: 25%">Assessment</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Plant cleanliness, housekeeping, environmental, and working conditions shall be conducive to controlling and improving quality.</div>
+                                                    <div class="requirement-text">A housekeeping policy shall be clearly defined and executed.</div>
+                                                    <div class="requirement-text">The facility shall be reviewed for conditions that are detrimental to quality processing such as loose parts on floor, oil around quench tanks, inadequate plant lighting, smoke, etc.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_10" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_10">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_2_10" id="satisfactory_2_10" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_10">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_10" id="not_satisfactory_2_10" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_10">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_10" id="na_2_10" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_10">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.10">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+
+                                        <!-- 2.11 Part Contamination Control -->
+                                        <tr>
+                                            <td style="width: 5%">2.11</td>
+                                            <td colspan="3" class="fw-bold">Are parts free from contaminants that would be detrimental to the heat treatment process?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Contamination control is critical for ensuring proper heat treatment results and preventing damage to parts during processing.</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="width: 5%"></th>
+                                            <th style="width: 40%">Requirements</th>
+                                            <th style="width: 30%">Objective Evidence</th>
+                                            <th style="width: 25%">Assessment</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Parts shall be free from contaminants that would be detrimental to the heat treatment process.</div>
+                                                    <div class="requirement-text">The organization shall have procedures to identify and control potential sources of contamination.</div>
+                                                    <div class="requirement-text">Regular inspections shall be conducted to ensure parts remain free from contamination throughout the process.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_2_11" rows="4" placeholder="Enter objective evidence here..."></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_2_11">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_2_11" id="satisfactory_2_11" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_2_11">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_11" id="not_satisfactory_2_11" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_2_11">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_2_11" id="na_2_11" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_2_11">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="2.11">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <!-- Section 3 - Equipment Tab -->
+                        <div class="tab-pane fade" id="section3" role="tabpanel" aria-labelledby="section3-tab">
+                            <div class="d-flex justify-content-between mb-4">
+                                <h3 class="h4">Section 3 - Equipment</h3>
+                                <button type="button" class="btn btn-sm btn-primary analyze-section-btn" data-section="section3">
+                                    <i class="fas fa-robot me-1"></i> Analyze All
+                                </button>
+                            </div>
+                            
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th colspan="4" class="text-center">Section 3 - Equipment</th>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="4" class="text-center">Please describe Objective Evidence for each Requirement</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- 3.1 Process Control Equipment -->
+                                        <tr>
+                                            <td style="width: 5%">3.1</td>
+                                            <td colspan="3" class="fw-bold">Do furnaces, generators, and quench systems have proper process control equipment?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Examples include temperature, carbon potential, dew point, gas flows, quench monitoring system including agitation, temperature control, etc., as listed in the applicable Process Tables, Section 1.0</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="width: 5%"></th>
+                                            <th style="width: 40%">Requirements</th>
+                                            <th style="width: 30%">Objective Evidence</th>
+                                            <th style="width: 25%">Assessment</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">The heat-treat equipment including furnaces, generators, and quench systems shall have proper process controls.</div>
+                                                    <div class="requirement-text">Recording instruments are required for temperature controlling devices and protective atmosphere monitoring units.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_3_1_1" data-requirement-id="3.1.1" rows="3"></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_3_1_1">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_3_1_1" id="satisfactory_3_1_1" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_3_1_1">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_3_1_1" id="not_satisfactory_3_1_1" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_3_1_1">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_3_1_1" id="na_3_1_1" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_3_1_1">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="3.1.1">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+
+                                        <!-- 3.2 Equipment Calibration -->
+                                        <tr>
+                                            <td style="width: 5%">3.2</td>
+                                            <td colspan="3" class="fw-bold">Are process equipment calibrations, verifications and certifications current?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Refer to the applicable Process Tables, Sections 1.0 and 2.0, for equipment calibration, verification and certification frequencies.</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="width: 5%"></th>
+                                            <th style="width: 40%">Requirements</th>
+                                            <th style="width: 30%">Objective Evidence</th>
+                                            <th style="width: 25%">Assessment</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">The calibrations, verifications and certifications of the process equipment shall be performed at regular intervals as specified in the applicable Process Table(s).</div>
+                                                    <div class="requirement-text">Non-contact thermometry devices shall be calibrated as specified in the applicable Process Tables.</div>
+                                                    <div class="requirement-text">A documented offset procedure as defined in Section P3.2.3 shall exist.</div>
+                                                    <div class="requirement-text">The documented offset procedure shall indicate who has the authority to approve the use of offsets and how this approval is documented.</div>
+                                                    <div class="requirement-text">Offset or bias applied for the instrumentation calibration adjustment shall comply with P3.2.3.</div>
+                                                    <div class="requirement-text">Calibration labels shall meet the requirements established in Section P3.2.5.1.</div>
+                                                    <div class="requirement-text">Calibration reports shall meet the requirements established in Section P3.2.5.2.</div>
+                                                </div>
+                                            </td>
                                             <td>
                                                 <textarea class="form-control evidence-textarea" name="evidence_3_2_1" data-requirement-id="3.2.1" rows="3"></textarea>
                                             </td>
@@ -2260,42 +2314,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td></td>
-                                            <td>Calibration shall be performed by qualified personnel against standards traceable to recognized national or international standards.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_3_2_2" data-requirement-id="3.2.2" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_3_2_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_3_2_2" id="satisfactory_3_2_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_3_2_2">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_3_2_2" id="not_satisfactory_3_2_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_3_2_2">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_3_2_2" id="na_3_2_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_3_2_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="3.2.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
                                             <td colspan="4" class="small">Comments:</td>
                                         </tr>
-                                        
-                                        <!-- 3.3 Temperature Uniformity -->
+
+                                        <!-- 3.3 Thermocouples and Protection Tubes -->
                                         <tr>
                                             <td style="width: 5%">3.3</td>
-                                            <td colspan="3" class="fw-bold">Does the organization ensure temperature uniformity of all heat treat equipment?</td>
+                                            <td colspan="3" class="fw-bold">Are thermocouples and protection tubes checked or replaced per Process Tables?</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="4" class="small text-muted">The organization shall ensure temperature uniformity of all thermal processing equipment per the Process Table requirements.</td>
+                                            <td colspan="4" class="small text-muted">The accuracy of thermocouples is essential for good temperature control, the collection of accurate process data and the protection of furnace equipment.</td>
                                         </tr>
                                         <tr>
                                             <th style="width: 5%"></th>
@@ -2305,7 +2333,13 @@
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>Temperature uniformity surveys shall be conducted at specified frequencies per the Process Table requirements.</td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Thermocouples and protection tubes shall be checked or replaced at frequencies specified in the applicable Process Tables.</div>
+                                                    <div class="requirement-text">Records shall be maintained showing compliance to the specified frequencies.</div>
+                                                    <div class="requirement-text">Thermocouple calibration shall conform to Section P3.1.</div>
+                                                </div>
+                                            </td>
                                             <td>
                                                 <textarea class="form-control evidence-textarea" name="evidence_3_3_1" data-requirement-id="3.3.1" rows="3"></textarea>
                                             </td>
@@ -2330,42 +2364,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td></td>
-                                            <td>Temperature uniformity surveys shall be conducted using calibrated instrumentation.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_3_3_2" data-requirement-id="3.3.2" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_3_3_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_3_3_2" id="satisfactory_3_3_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_3_3_2">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_3_3_2" id="not_satisfactory_3_3_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_3_3_2">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_3_3_2" id="na_3_3_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_3_3_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="3.3.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
                                             <td colspan="4" class="small">Comments:</td>
                                         </tr>
-                                        
-                                        <!-- 3.4 System Accuracy Tests -->
+
+                                        <!-- 3.4 Temperature Uniformity -->
                                         <tr>
                                             <td style="width: 5%">3.4</td>
-                                            <td colspan="3" class="fw-bold">Does the organization perform system accuracy tests?</td>
+                                            <td colspan="3" class="fw-bold">Does the organization ensure temperature uniformity of all heat treat equipment?</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="4" class="small text-muted">The organization shall perform system accuracy tests (SAT) on all controlling, recording, and monitoring instrumentation per the Process Table requirements.</td>
+                                            <td colspan="4" class="small text-muted">Temperature uniformity is critical for consistent heat treatment results. Surveys must be conducted according to the requirements in Section P3.4.</td>
                                         </tr>
                                         <tr>
                                             <th style="width: 5%"></th>
@@ -2375,7 +2383,14 @@
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>System accuracy tests shall be conducted at specified frequencies per the Process Table requirements.</td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Temperature uniformity surveys shall be conducted at specified frequencies per Section P3.4.</div>
+                                                    <div class="requirement-text">Surveys shall be conducted at minimum and maximum operating temperatures.</div>
+                                                    <div class="requirement-text">Survey results shall be documented and maintained.</div>
+                                                    <div class="requirement-text">Out-of-specification conditions shall be addressed with corrective actions.</div>
+                                                </div>
+                                            </td>
                                             <td>
                                                 <textarea class="form-control evidence-textarea" name="evidence_3_4_1" data-requirement-id="3.4.1" rows="3"></textarea>
                                             </td>
@@ -2400,35 +2415,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td></td>
-                                            <td>System accuracy tests shall be conducted using independent, calibrated test equipment with appropriate accuracy.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_3_4_2" data-requirement-id="3.4.2" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_3_4_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_3_4_2" id="satisfactory_3_4_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_3_4_2">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_3_4_2" id="not_satisfactory_3_4_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_3_4_2">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_3_4_2" id="na_3_4_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_3_4_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="3.4.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
                                             <td colspan="4" class="small">Comments:</td>
                                         </tr>
-                                        
+
                                         <!-- 3.5 Equipment Records -->
                                         <tr>
                                             <td style="width: 5%">3.5</td>
@@ -2445,7 +2434,14 @@
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>The organization shall maintain complete records for all heat treat equipment including calibration, maintenance, and testing.</td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Complete records shall be maintained for all heat treat equipment.</div>
+                                                    <div class="requirement-text">Records shall include calibration history, maintenance activities, and testing results.</div>
+                                                    <div class="requirement-text">Records shall be readily accessible and properly maintained.</div>
+                                                    <div class="requirement-text">Records shall demonstrate compliance with all applicable requirements.</div>
+                                                </div>
+                                            </td>
                                             <td>
                                                 <textarea class="form-control evidence-textarea" name="evidence_3_5_1" data-requirement-id="3.5.1" rows="3"></textarea>
                                             </td>
@@ -2470,102 +2466,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td></td>
-                                            <td>Records shall be maintained for the period specified by applicable regulations or customer requirements.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_3_5_2" data-requirement-id="3.5.2" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_3_5_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_3_5_2" id="satisfactory_3_5_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_3_5_2">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_3_5_2" id="not_satisfactory_3_5_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_3_5_2">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_3_5_2" id="na_3_5_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_3_5_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="3.5.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
                                             <td colspan="4" class="small">Comments:</td>
                                         </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        
-                        <!-- Job Audit Tab -->
-                        <div class="tab-pane fade" id="jobaudit" role="tabpanel" aria-labelledby="jobaudit-tab">
-                            <div class="d-flex justify-content-between mb-4">
-                                <h3 class="h4">Job Audit - Process Table Requirements</h3>
-                                <button type="button" class="btn btn-sm btn-primary analyze-section-btn" data-section="jobaudit">
-                                    <i class="fas fa-robot me-1"></i> Analyze All
-                                </button>
-                            </div>
-                            
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead class="table-light">
+
+                                        <!-- 3.6 Pyrometry - Thermocouples (P3.1) -->
                                         <tr>
-                                            <th colspan="4" class="text-center">Job Audit - Process Table Requirements</th>
+                                            <td style="width: 5%">3.6</td>
+                                            <td colspan="3" class="fw-bold">Do thermocouples meet the requirements of Section P3.1?</td>
                                         </tr>
                                         <tr>
-                                            <th colspan="4" class="text-center">Please describe Objective Evidence for each Requirement</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <!-- Job Details -->
-                                        <tr>
-                                            <td colspan="4" class="bg-light">
-                                                <div class="row">
-                                                    <div class="col-md-6 mb-3">
-                                                        <label for="jobIdentity" class="form-label">Job Identity:</label>
-                                                        <input type="text" class="form-control" id="jobIdentity" name="job_identity">
-                                                    </div>
-                                                    <div class="col-md-6 mb-3">
-                                                        <label for="jobCustomer" class="form-label">Customer:</label>
-                                                        <input type="text" class="form-control" id="jobCustomer" name="job_customer">
-                                                    </div>
-                                                    <div class="col-md-6 mb-3">
-                                                        <label for="jobOrderNumber" class="form-label">Shop Order Number:</label>
-                                                        <input type="text" class="form-control" id="jobOrderNumber" name="job_order_number">
-                                                    </div>
-                                                    <div class="col-md-6 mb-3">
-                                                        <label for="jobPartNumber" class="form-label">Part Number:</label>
-                                                        <input type="text" class="form-control" id="jobPartNumber" name="job_part_number">
-                                                    </div>
-                                                    <div class="col-md-12 mb-3">
-                                                        <label for="jobPartDescription" class="form-label">Part Description:</label>
-                                                        <input type="text" class="form-control" id="jobPartDescription" name="job_part_description">
-                                                    </div>
-                                                    <div class="col-md-6 mb-3">
-                                                        <label for="jobMaterial" class="form-label">Material:</label>
-                                                        <input type="text" class="form-control" id="jobMaterial" name="job_material">
-                                                    </div>
-                                                    <div class="col-md-6 mb-3">
-                                                        <label for="jobHeatTreatRequirements" class="form-label">Heat Treat Requirements:</label>
-                                                        <input type="text" class="form-control" id="jobHeatTreatRequirements" name="job_heat_treat_requirements">
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        
-                                        <!-- JA.1 Temperature Uniformity Compliance -->
-                                        <tr>
-                                            <td style="width: 5%">JA.1</td>
-                                            <td colspan="3" class="fw-bold">Temperature Uniformity Compliance</td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" class="small text-muted">The organization shall ensure temperature uniformity of all thermal processing equipment.</td>
+                                            <td colspan="4" class="small text-muted">Thermocouples must meet specific requirements for calibration, accuracy, and usage as defined in Section P3.1.</td>
                                         </tr>
                                         <tr>
                                             <th style="width: 5%"></th>
@@ -2575,77 +2485,32 @@
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>Temperature uniformity surveys are conducted in accordance with applicable Process Table requirements.</td>
                                             <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_ja_1_1" data-requirement-id="JA.1.1" rows="3"></textarea>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Thermocouples shall be calibrated before first use within the temperature range they will be used.</div>
+                                                    <div class="requirement-text">Thermocouples shall meet accuracy requirements of Section P3.1 Tables.</div>
+                                                    <div class="requirement-text">The insertion depth of Type K and Type E test thermocouples shall be documented when reused.</div>
+                                                    <div class="requirement-text">Thermocouple wire shall meet ASTM E230 or IEC 60584-1 Special Limits of Error.</div>
+                                                </div>
                                             </td>
-                                            <td class="analysis-cell" id="analysis_JA_1_1">
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_3_6_1" data-requirement-id="3.6.1" rows="3"></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_3_6_1">
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_ja_1_1" id="satisfactory_ja_1_1" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_ja_1_1">Satisfactory</label>
+                                                        <input type="radio" class="btn-check" name="assessment_3_6_1" id="satisfactory_3_6_1" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_3_6_1">Satisfactory</label>
                                                         
-                                                        <input type="radio" class="btn-check" name="assessment_ja_1_1" id="not_satisfactory_ja_1_1" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_ja_1_1">Not Satisfactory</label>
+                                                        <input type="radio" class="btn-check" name="assessment_3_6_1" id="not_satisfactory_3_6_1" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_3_6_1">Not Satisfactory</label>
                                                         
-                                                        <input type="radio" class="btn-check" name="assessment_ja_1_1" id="na_ja_1_1" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_ja_1_1">N/A</label>
+                                                        <input type="radio" class="btn-check" name="assessment_3_6_1" id="na_3_6_1" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_3_6_1">N/A</label>
                                                     </div>
                                                 </div>
                                                 <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="JA.1.1">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>Documentation of temperature uniformity surveys is complete and up-to-date.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_ja_1_2" data-requirement-id="JA.1.2" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_JA_1_2">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_ja_1_2" id="satisfactory_ja_1_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_ja_1_2">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_ja_1_2" id="not_satisfactory_ja_1_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_ja_1_2">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_ja_1_2" id="na_ja_1_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_ja_1_2">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="JA.1.2">
-                                                        <i class="fas fa-brain me-1"></i> Analyze
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td></td>
-                                            <td>Work zones are clearly defined and documented.</td>
-                                            <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_ja_1_3" data-requirement-id="JA.1.3" rows="3"></textarea>
-                                            </td>
-                                            <td class="analysis-cell" id="analysis_JA_1_3">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_ja_1_3" id="satisfactory_ja_1_3" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_ja_1_3">Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_ja_1_3" id="not_satisfactory_ja_1_3" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_ja_1_3">Not Satisfactory</label>
-                                                        
-                                                        <input type="radio" class="btn-check" name="assessment_ja_1_3" id="na_ja_1_3" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_ja_1_3">N/A</label>
-                                                    </div>
-                                                </div>
-                                                <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="JA.1.3">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="3.6.1">
                                                         <i class="fas fa-brain me-1"></i> Analyze
                                                     </button>
                                                 </div>
@@ -2654,14 +2519,14 @@
                                         <tr>
                                             <td colspan="4" class="small">Comments:</td>
                                         </tr>
-                                        
-                                        <!-- JA.2 System Accuracy Test Compliance -->
+
+                                        <!-- 3.7 Pyrometry - Instrumentation (P3.2) -->
                                         <tr>
-                                            <td style="width: 5%">JA.2</td>
-                                            <td colspan="3" class="fw-bold">System Accuracy Test (SAT) Compliance</td>
+                                            <td style="width: 5%">3.7</td>
+                                            <td colspan="3" class="fw-bold">Does instrumentation meet the requirements of Section P3.2?</td>
                                         </tr>
                                         <tr>
-                                            <td colspan="4" class="small text-muted">The organization shall ensure the accuracy of all temperature measurement systems used in thermal processing equipment.</td>
+                                            <td colspan="4" class="small text-muted">All instrumentation must meet specific requirements for calibration, accuracy, and operation as defined in Section P3.2.</td>
                                         </tr>
                                         <tr>
                                             <th style="width: 5%"></th>
@@ -2671,51 +2536,188 @@
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>System accuracy tests are conducted in accordance with applicable Process Table requirements.</td>
                                             <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_ja_2_1" data-requirement-id="JA.2.1" rows="3"></textarea>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">Test instruments shall be digital with minimum readability of 1.0°C or 1.0°F.</div>
+                                                    <div class="requirement-text">Temperature for each control zone shall be recorded by a recording instrument.</div>
+                                                    <div class="requirement-text">Recorder shall operate during entire time product is in furnace.</div>
+                                                    <div class="requirement-text">Print intervals shall not exceed 5 minutes for analog and 2 minutes for digital recorders.</div>
+                                                    <div class="requirement-text">If calibrations are outside limits, equipment shall not be used until successful calibration.</div>
+                                                </div>
                                             </td>
-                                            <td class="analysis-cell" id="analysis_JA_2_1">
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_3_7_1" data-requirement-id="3.7.1" rows="3"></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_3_7_1">
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_ja_2_1" id="satisfactory_ja_2_1" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_ja_2_1">Satisfactory</label>
+                                                        <input type="radio" class="btn-check" name="assessment_3_7_1" id="satisfactory_3_7_1" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_3_7_1">Satisfactory</label>
                                                         
-                                                        <input type="radio" class="btn-check" name="assessment_ja_2_1" id="not_satisfactory_ja_2_1" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_ja_2_1">Not Satisfactory</label>
+                                                        <input type="radio" class="btn-check" name="assessment_3_7_1" id="not_satisfactory_3_7_1" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_3_7_1">Not Satisfactory</label>
                                                         
-                                                        <input type="radio" class="btn-check" name="assessment_ja_2_1" id="na_ja_2_1" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_ja_2_1">N/A</label>
+                                                        <input type="radio" class="btn-check" name="assessment_3_7_1" id="na_3_7_1" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_3_7_1">N/A</label>
                                                     </div>
                                                 </div>
                                                 <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="JA.2.1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="3.7.1">
                                                         <i class="fas fa-brain me-1"></i> Analyze
                                                     </button>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+
+                                        <!-- 3.8 Pyrometry - System Accuracy Tests (P3.3) -->
+                                        <tr>
+                                            <td style="width: 5%">3.8</td>
+                                            <td colspan="3" class="fw-bold">Are System Accuracy Tests (SAT) performed according to Section P3.3?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">System Accuracy Tests must be performed to verify the accuracy of the complete temperature measurement system.</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="width: 5%"></th>
+                                            <th style="width: 40%">Requirements</th>
+                                            <th style="width: 30%">Objective Evidence</th>
+                                            <th style="width: 25%">Assessment</th>
+                                        </tr>
+                                        <tr>
                                             <td></td>
-                                            <td>All instrumentation is included in the SAT program.</td>
                                             <td>
-                                                <textarea class="form-control evidence-textarea" name="evidence_ja_2_2" data-requirement-id="JA.2.2" rows="3"></textarea>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">SAT shall be performed at specified frequencies per Process Tables.</div>
+                                                    <div class="requirement-text">SAT shall be performed using calibrated test instruments.</div>
+                                                    <div class="requirement-text">SAT records shall meet requirements of Section P3.3.5.</div>
+                                                    <div class="requirement-text">Failed SATs shall be investigated and corrective action taken.</div>
+                                                </div>
                                             </td>
-                                            <td class="analysis-cell" id="analysis_JA_2_2">
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_3_8_1" data-requirement-id="3.8.1" rows="3"></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_3_8_1">
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <div class="btn-group btn-group-sm" role="group">
-                                                        <input type="radio" class="btn-check" name="assessment_ja_2_2" id="satisfactory_ja_2_2" value="satisfactory">
-                                                        <label class="btn btn-outline-success" for="satisfactory_ja_2_2">Satisfactory</label>
+                                                        <input type="radio" class="btn-check" name="assessment_3_8_1" id="satisfactory_3_8_1" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_3_8_1">Satisfactory</label>
                                                         
-                                                        <input type="radio" class="btn-check" name="assessment_ja_2_2" id="not_satisfactory_ja_2_2" value="not_satisfactory">
-                                                        <label class="btn btn-outline-danger" for="not_satisfactory_ja_2_2">Not Satisfactory</label>
+                                                        <input type="radio" class="btn-check" name="assessment_3_8_1" id="not_satisfactory_3_8_1" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_3_8_1">Not Satisfactory</label>
                                                         
-                                                        <input type="radio" class="btn-check" name="assessment_ja_2_2" id="na_ja_2_2" value="na">
-                                                        <label class="btn btn-outline-secondary" for="na_ja_2_2">N/A</label>
+                                                        <input type="radio" class="btn-check" name="assessment_3_8_1" id="na_3_8_1" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_3_8_1">N/A</label>
                                                     </div>
                                                 </div>
                                                 <div class="mt-1">
-                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="JA.2.2">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="3.8.1">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+
+                                        <!-- 3.9 Pyrometry - Temperature Uniformity Surveys (P3.4) -->
+                                        <tr>
+                                            <td style="width: 5%">3.9</td>
+                                            <td colspan="3" class="fw-bold">Are Temperature Uniformity Surveys (TUS) performed according to Section P3.4?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Temperature Uniformity Surveys must be performed to verify temperature uniformity throughout the work zone.</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="width: 5%"></th>
+                                            <th style="width: 40%">Requirements</th>
+                                            <th style="width: 30%">Objective Evidence</th>
+                                            <th style="width: 25%">Assessment</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">TUS shall be performed at frequencies specified in Process Tables.</div>
+                                                    <div class="requirement-text">TUS shall be performed at minimum and maximum operating temperatures.</div>
+                                                    <div class="requirement-text">Temperature variations shall not exceed tolerances in Table 3.1.</div>
+                                                    <div class="requirement-text">TUS shall be performed after major repairs or modifications.</div>
+                                                    <div class="requirement-text">Failed TUS shall be investigated and corrective action taken.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_3_9_1" data-requirement-id="3.9.1" rows="3"></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_3_9_1">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_3_9_1" id="satisfactory_3_9_1" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_3_9_1">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_3_9_1" id="not_satisfactory_3_9_1" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_3_9_1">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_3_9_1" id="na_3_9_1" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_3_9_1">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="3.9.1">
+                                                        <i class="fas fa-brain me-1"></i> Analyze
+                                                    </button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small">Comments:</td>
+                                        </tr>
+
+                                        <!-- 3.10 Process Table Requirements -->
+                                        <tr>
+                                            <td style="width: 5%">3.10</td>
+                                            <td colspan="3" class="fw-bold">Are all Process Table requirements for equipment met?</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="small text-muted">Equipment must meet all requirements specified in the applicable Process Tables (A through I).</td>
+                                        </tr>
+                                        <tr>
+                                            <th style="width: 5%"></th>
+                                            <th style="width: 40%">Requirements</th>
+                                            <th style="width: 30%">Objective Evidence</th>
+                                            <th style="width: 25%">Assessment</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <div class="requirement-row">
+                                                    <div class="requirement-text">All gaseous quench systems shall have pressure indicators and fan operation indicators.</div>
+                                                    <div class="requirement-text">Flow controllers for atmosphere delivery shall be calibrated or verified annually.</div>
+                                                    <div class="requirement-text">Vacuum monitoring devices shall be calibrated or verified annually.</div>
+                                                    <div class="requirement-text">Spectrometers and carbon IR analyzers shall be verified daily or prior to use.</div>
+                                                    <div class="requirement-text">Equipment shall meet all specific requirements in applicable Process Tables.</div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <textarea class="form-control evidence-textarea" name="evidence_3_10_1" data-requirement-id="3.10.1" rows="3"></textarea>
+                                            </td>
+                                            <td class="analysis-cell" id="analysis_3_10_1">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <div class="btn-group btn-group-sm" role="group">
+                                                        <input type="radio" class="btn-check" name="assessment_3_10_1" id="satisfactory_3_10_1" value="satisfactory">
+                                                        <label class="btn btn-outline-success" for="satisfactory_3_10_1">Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_3_10_1" id="not_satisfactory_3_10_1" value="not_satisfactory">
+                                                        <label class="btn btn-outline-danger" for="not_satisfactory_3_10_1">Not Satisfactory</label>
+                                                        
+                                                        <input type="radio" class="btn-check" name="assessment_3_10_1" id="na_3_10_1" value="na">
+                                                        <label class="btn btn-outline-secondary" for="na_3_10_1">N/A</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-1">
+                                                    <button type="button" class="btn btn-sm btn-outline-primary analyze-btn" data-requirement-id="3.10.1">
                                                         <i class="fas fa-brain me-1"></i> Analyze
                                                     </button>
                                                 </div>
@@ -2743,14 +2745,15 @@
         // Use a safer approach to handle Jinja template data
         let auditData = {};
         
-        // The template data is injected directly by the server
-        // We're using a JavaScript comment to hide this from the linter
-        // while still allowing the template to be processed
-        /* JINJA_START */
-        {% if audit_data %}
-        auditData = {{ audit_data|tojson|safe }};
-        {% endif %}
-        /* JINJA_END */
+        // Initialize audit data from server-side template
+        const auditDataElement = document.getElementById('audit-data');
+        if (auditDataElement) {
+            try {
+                auditData = JSON.parse(auditDataElement.getAttribute('data-audit'));
+            } catch (e) {
+                console.error('Error parsing audit data:', e);
+            }
+        }
         
         if (Object.keys(auditData).length > 0) {
             populateAuditData(auditData);
