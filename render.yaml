@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: cqi9-assessment
+    env: python
+    buildCommand: pip install -r cqi9_system/requirements.txt
+    startCommand: cd cqi9_system && gunicorn web_app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.8.1
+      - key: FLASK_ENV
+        value: production 
