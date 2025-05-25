@@ -35,8 +35,12 @@ env/
 # Logs and databases
 *.log
 *.sqlite
-logs/
-temp/
+logs/*
+!logs/.gitkeep
+temp/*
+!temp/.gitkeep
+data/uploads/*
+!data/uploads/.gitkeep
 
 # Environment variables
 .env
@@ -45,4 +49,7 @@ temp/
 
 # System Files
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Render specific
+.render-buildpacks/ 
