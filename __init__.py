@@ -1,8 +1,10 @@
 """
-CQI-9 Compliance Analysis System
-================================
+CQI-9 Assessment System
+======================
 
-A comprehensive solution for analyzing thermal processing requirement compliance with CQI-9 standards.
+A web-based system for CQI-9 heat treatment assessment and compliance.
 """
+
+from .web_app import app
 
 __version__ = "0.1.0" 
